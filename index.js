@@ -11,6 +11,9 @@ app.listen(port, function() {
 });
 app.use(express.static('Public'));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.set('view engine', 'ejs');
 // Kết thúc khai báo:
+app.get("/", function(req, res) {
+    res.render("home.ejs");
+})
