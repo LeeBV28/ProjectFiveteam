@@ -1,3 +1,28 @@
 .header {
     background-color: #4285de;
+    color: #fff;
+}
+
+.header-top{
+    height: 40px;
+    padding: 4px ;
+}
+.header-logo{}
+
+.header-search{
+    background-color: white;
+    border-radius: 4px;
+    display: flex;
+}
+
+.header-search__content{
+line-height: 16px;
+
+
+}
+
+.header-search__button{
+line-height: 14px;
+    borde: none;
+
 }
