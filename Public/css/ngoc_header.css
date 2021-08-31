@@ -1,28 +1,127 @@
+@media (min-width: 1200px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1256px;
+    }}
 .header {
-    background-color: #4285de;
+    background-color: #0652b8;
     color: #fff;
 }
+.cart-icon{
+    font-weight: 600;
+    display: block;
 
-.header-top{
-    height: 40px;
+}
+
+.header__top{
+    height: 42px;
     padding: 4px ;
 }
-.header-logo{}
 
-.header-search{
+.header__logo{}
+.header__logo-img{}
+
+.header__search{
+    display: flex;
+    height: 36px;
     background-color: white;
     border-radius: 4px;
+    padding-right: 0;
+}
+
+.header__search-content{
+    line-height: 16px;
+    border: none;
+    flex: 1;
+}
+
+.header__search-btn{
+    width: 70px ;
+    height: 32px;
+    border: none;
+    background-color: blue;
+    border-radius: 2px;
+    margin: 2px ;
+}
+
+.search-btn-icon{
+    color: white;
+    font-size: 15px;
+}
+
+.header__cart{
     display: flex;
+    justify-content: flex-end;
+    padding: 10px 0 10px 10px;
 }
 
-.header-search__content{
-line-height: 16px;
-
+.header__botton{
+    height: 44px;
+    padding-top: 8px;
+    font-size: 14px;
 
 }
 
-.header-search__button{
-line-height: 14px;
-    borde: none;
 
+.header__list-product{
+    background-color: #fff200;
+    border-top-left-radius:8px ;
+    border-top-right-radius: 8px;
+}
+.list-product{
+    color: blue;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 36px;
+}
+.header__navbar{
+
+    padding : 0 30px;
+    line-height: 32px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.header__navbar-list{
+    height: 100%;
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.header__navbar-list li {
+    background-color: blue;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-right: 8px;
+
+}
+
+.header__navbar-content{
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding: 2px 20px;
+
+}
+.header__account{
+    line-height: 32px;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+.header__account-login{
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.header__hotline{
+    text-align: right;
+    line-height: 32px;
+    padding: 0;
 }

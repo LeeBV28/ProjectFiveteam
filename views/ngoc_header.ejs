@@ -1,45 +1,49 @@
-<div class="header-top">
+<div class="header__top">
     <div class="container">
         <div class="row">
-            <div class="header-logo col-md-2">
-                <img src="https://hc.com.vn/i/hc_ecommerce/image/catalog/logo.png" alt="" id="header-logo">
+            <div class="header__logo col-md-2">
+                <img class="header__logo-img" src="https://hc.com.vn/i/hc_ecommerce/image/catalog/logo.png" alt="" id="header-logo">
             </div>
 
-            <div class="header-search col-md-7">
+            <div class="header__search col-md-7">
 
-                <input type="text" class="header-search_content" placeholder="Tìm kiếm...">
-                <button class="header-search_button"><i class="ti-search"></i></button>
+                <input type="text" class="header__search-content" placeholder="Tìm kiếm...">
+                <button class="header__search-btn"><i class="search-btn-icon ti-search"></i></button>
             </div>
 
-            <div class="header-cart col-md-3">
-                <ul class="header-cart_list">
-                    <li class="header-cart_fovorite"><i class="ti-heart">Giỏ Hàng</i></li>
-                </ul>
+            <div class="header__cart col-md-3">
+                <i class="cart-icon ti-shopping-cart">   Giỏ Hàng</i>
+                <div style="padding: 0 10px ;    line-height: 15px;"> | </div>
+                <i class="cart-icon ti-heart">  Yêu thích</i>
             </div>
+
         </div>
     </div>
 </div>
-<div class="header-botton">
+<div class="header__botton">
     <div class="container">
         <div class="row">
-            <div class="header-product-portfolio col-md-3">
-                <i class="ti-align-justify"> <h3>Sản Phẩm</h3></i>
+            <div class="header__list-product col-md-2">
+                <a href="#" class="list-product ti-align-justify"> Sản Phẩm</a>
             </div>
-            <div class="header-navbar col-md-5">
-                <ul class="header-navbar_list">
-                    <li><i>Sản Phẩm Hót</i></li>
-                    <li><i>Góc Tư Vấn</i></li>
-                    <li><i>Tuyển Dụng</i></li>
-                    <li><i>Tìm Siêu Thị </i></li>
+            <div class="header__navbar col-md-6">
+                <ul class="header__navbar-list">
+                    <li><a href="#" class="header__navbar-content">Sản Phẩm Hót</a></li>
+                    <li><a href="#" class="header__navbar-content">Góc Tư Vấn</a></li>
+                    <li><a href="#" class="header__navbar-content">Tuyển Dụng</a></li>
+                    <li><a href="#" class="header__navbar-content">Tìm Siêu Thị </a></li>
                 </ul>
             </div>
-            <div class="col-md-2">
-                <ul class="header-login">
+            <div class="col-md-4">
+                <div class="row">
+                <ul class="header__account col-md-7">
                     <li><i class="ti-lock">Đăng Nhập</i></li>
+                    <div style="padding: 0 10px ;    line-height: 30px;"> | </div>
                     <li><i class="ti-pencil-alt">Đăng Kí</i></li>
                 </ul>
+                <div class="header__hotline col-md-5"><i class="ti-headphone-alt"></i> Hotline : 0123456789</div>
             </div>
-            <div class="header-hotline col-md-2"><i class="ti-headphone-alt"></i>Hotline : 0123456789</div>
+            </div>
         </div>
     </div>
 </div>
