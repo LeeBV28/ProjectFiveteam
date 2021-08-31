@@ -66,7 +66,20 @@
     background-color: #fff200;
     border-top-left-radius:8px ;
     border-top-right-radius: 8px;
+    display: flex;
+    position: relative;
 }
+
+.header__list-product p {
+    margin: 0 16px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: blue;
+    line-height: 36px;
+
+}
+
 .list-product{
     color: blue;
     text-decoration: none;
@@ -75,6 +88,26 @@
     font-size: 16px;
     line-height: 36px;
 }
+
+.list-product-detail{
+    background-color: #dddddd;
+    color: #333;
+    position: absolute;
+    top: 36px;
+    left: 0;
+    line-height: 30px;
+    width: 100%;
+
+}
+.product-content {
+    list-style: none;
+
+}
+.product-content span {
+    font-style: normal;
+}
+
+
 .header__navbar{
 
     padding : 0 30px;
@@ -115,6 +148,7 @@
 }
 
 .header__account-login{
+    font-family: Roboto,sans-serif;
     list-style: none;
     display: flex;
     padding: 0;
@@ -125,3 +159,4 @@
     line-height: 32px;
     padding: 0;
 }
+
