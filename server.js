@@ -6,7 +6,7 @@ var urlencodeParser = bodyParser.urlencoded({extended: false});
 
 app.set('view engine','ejs');
 app.set('views','./views');
-app.use(express.static(__dirname + '/Public/css'));
+app.use(express.static(__dirname + '/Public'));
 
 app.get('/',function(req,res){
     res.render('home');
@@ -47,10 +47,6 @@ app.get('/cv9',function(req,res){
 app.get('/cv10',function(req,res){
     res.render('cv10');
 });
-
-
-
-
-app.listen(8888,function(){
+app.listen(5000,function(){
     console.log('Sever is running...');
 });
