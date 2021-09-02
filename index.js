@@ -21,12 +21,16 @@ app.set('view engine', 'ejs');
 // Home
 app.get('/',function(req,res) {
     res.render("home")
-})
+});
 
 // danh sách sản phẩm theo loại sản phẩm
 app.get('/list-sp',function(req,res) {
     res.render('listsp')
-})
+});
+// Danh sách siêu thị
+app.get('/list-supermarket',function(req,res) {
+    res.render('find_sieuthi')
+});
 
 
 
