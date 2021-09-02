@@ -1,0 +1,154 @@
+:root {
+    --color-blues: #4285de;
+    --color-brown: #d45e35;
+    --color-gray: #f1f1f1;
+    --color-ori: #fb6e2e;
+    --color-green: #3dab64;
+}
+
+body {
+    font-weight: 400;
+    font-size: 14px;
+}
+.fillter {
+    border: 2px solid var(--color-gray);
+    border-radius: 8px;
+    padding: 0 20px;
+}
+.fillter h1 {
+    margin: 0 -20px;
+    background-color: var(--color-gray);
+    border-bottom: 1px solid #b4b4b4;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.fillter h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.fillter .nhomlienquan {
+    margin-top: 10px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .col-6{
+    width: 48%;
+    border-radius: 5px;
+}
+.header img {
+    width: 100%;
+    border-radius: 5px;
+}
+.header:hover .col-6 {
+    filter: blur(3px);
+    opacity: .5;
+    transform: scale(.98);
+    box-shadow: none;
+}
+
+.header:hover .col-6:hover {
+    transform: scale(1);
+    filter: blur(0px);
+    opacity: 1;
+    box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.125);
+}
+
+/* css show sản phẩm */
+.showSp {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.showSp h1 {
+    width: 100%;
+}
+.show {
+    width: 20%;
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.show img {
+    width: 100%;
+}
+.show a {
+    color: black;
+}
+.show p {
+    font-size: 12px;
+    text-align: center;
+    color: black;
+    margin: 0;
+}
+.show h4 {
+    font-size: 20px;
+    color: var(--color-blues);
+    margin: 0;
+}
+.show .show_hidden {
+    display: none;
+    padding: 0 50px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.show_hidden i {
+    font-size: 30px;
+    color: var(--color-ori);
+    position: relative;
+}
+.show_hidden i .hover_flex {
+    width: 118px;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    color: white;
+    background-color: black;
+    border-radius: 3px;
+    padding: 6px 0;
+}
+.show:hover .show_hidden {
+    display: flex;
+}
+.show_hidden .bxs-cart:hover .add_cart {
+    display: block;
+}
+.show_hidden .bxs-add-to-queue:hover .add_like {
+    display: block;
+}
+
+/* css nav button */
+.nav_button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* slide  */
+.slider {
+    display: flex;
+}
+.btn-menu {
+    background-color: var(--color-ori);
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: none;
+}
+div#carouselExampleControls:hover .btn-menu {
+    display: flex;
+}

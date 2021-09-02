@@ -2,6 +2,7 @@
 var express = require('express');
 var mssql = require('mssql');
 var bodyParser = require('body-parser');
+const { render } = require('ejs');
 
 var app = express();
 var port = process.env.PORT || 5500;
@@ -16,6 +17,11 @@ app.set('view engine', 'ejs');
 // Kết thúc khai báo:
 
 
-app.get('/',function(req,res) {
-    
+
+// danh sách sản phẩm theo loại sản phẩm
+app.get('/list-sp',function(req,res) {
+    res.render('listsp')
 })
+
+
+
