@@ -25,3 +25,6 @@ app.get('/list-sp',function(req,res) {
 
 
 
+app.get('/',function(req,res) {
+        res.render("home")
+})

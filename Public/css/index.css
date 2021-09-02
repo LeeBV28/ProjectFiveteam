@@ -5,6 +5,7 @@
 }
 body {
     font-family: 'Roboto', sans-serif;
+<<<<<<< HEAD
     font-weight: 400;
 }
 a {
@@ -12,4 +13,7 @@ a {
 }
 li {
     list-style-type: none;
+=======
+    font-size: 14px;
+>>>>>>> 6ce985dc08bdbc4d80f7022487224a7cb336494f
 }
