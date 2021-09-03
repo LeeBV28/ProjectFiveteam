@@ -1,5 +1,5 @@
 @media (min-width: 1200px){
-    .container, .container-lg, .container-md, .container-sm, .container-xl {
+    .container {
         max-width: 1256px;
     }}
 .header {
@@ -135,7 +135,7 @@
     text-decoration: none;
     display: block;
     color: white;
-    padding: 4px 20px;
+    padding: 2px 12px;
 
 }
 .header__account{
@@ -154,7 +154,7 @@
     padding: 0;
 }
 
-.header__hotline{
+.header__hotline.col-md-5 {
     text-align: right;
     line-height: 32px;
     padding: 0;
