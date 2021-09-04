@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('head') %>
+    <title>Home</title>
+    <!-- css -->
+    <link rel="stylesheet" href="/css/listsp.css">
+    <link rel="stylesheet" href="/css/body_home.css">
+    <!-- boxicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- themify icon -->
+    <link rel="stylesheet" href="./fonts/themify-icons/themify-icons.css">
+    <!-- css header -->
+    <link rel="stylesheet" href="./css/ngoc_header.css">
+</head>
+<body>
+    <header class="header">
+        <%-include("ngoc_header")%>
+    </header>
+    <!-- slider  -->
+    <div class="cotainer">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col">
+                <div class="banner_slider">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./image/sale3.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./image/sale1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./image/sale2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end slider -->
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <div class="banner_left">
+                    <a href="#">
+                        <img src="./image/1992236_BANNER_DESKTOP_IMAGE_1_89765.jpg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./image/1992236_BANNER_DESKTOP_IMAGE_1_89765.jpg" alt="">
+                    </a>
+                </div>
+                <!-- Cam kết -->
+                <hr>
+                <div class="camket">
+                    <div class="icon">
+                        <img src="./image/check.png" alt="">
+                    </div>
+                    <div class="conten">
+                        <h1>Sản phẩm</h1>
+                        <p>hàng chính hãng</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="camket">
+                    <div class="icon shippig">
+                        <img src="./image/Shipping_Icon.png" alt="">
+                    </div>
+                    <div class="conten">
+                        <h1>Vận Chuyển</h1>
+                        <p>Miễn phí vận chuyển 50km</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="camket">
+                    <div class="icon">
+                        <img src="./image/Repair_Icon.png" alt="">
+                    </div>
+                    <div class="conten">
+                        <h1>bảo hành</h1>
+                        <p>Bảo hành tận nơi</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="camket">
+                    <div class="icon">
+                        <img src="./image/PigMoney_Icon.png" alt="">
+                    </div>
+                    <div class="conten">
+                        <h1>Mua hàng</h1>
+                        <p>hỗ trợ mua trả góp</p>
+                    </div>
+                </div>
+                <hr>
+                <!-- end cam kết -->
+            </div>
+            <div class="col">
+                <div class="banner_QC">
+                    <div class="banner_right">
+                        <div>
+                            <a href="#">
+                                <img src="./image/1992236_BANNER_DESKTOP_IMAGE_1_89765.jpg" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img src="./image/1992236_BANNER_DESKTOP_IMAGE_1_89765.jpg" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img src="./image/1992236_BANNER_DESKTOP_IMAGE_1_89765.jpg" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img src="./image/1992236_BANNER_DESKTOP_IMAGE_1_89765.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tìm kiếm nhiều nhất -->
+                <div class="spbanchay">
+                    <h1>Tìm kiếm nhiều nhất</h1>
+                    <hr>
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <!-- slide 1 -->
+                            <div class="carousel-item active">
+                                <div class="slider">
+                                    <div class="show">
+                                        <a href="#">
+                                            <img src="./image/GD.001686_DESKTOP_51361.jpg" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <p>Bình nóng lạnh gián tiếp Ariston 20 lít SL2 20 RS 2.5 FE MT</h3>
+                                        </a>
+                                        <h4>3,190,000đ</h4>
+                                        <div class="show_hidden">
+                                            <a href="#">
+                                                <i class='bx bxs-cart'>
+                                                    <p class="add_cart hover_flex">
+                                                        Thêm vào giỏ hàng
+                                                    </p>
+                                                </i>
+                                            </a>
+                                            <a href="#">
+                                                <i class='bx bxs-add-to-queue'>
+                                                    <p class="add_like hover_flex">
+                                                        Thêm vào mục ưu thích
+                                                    </p>
+                                                </i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="show">
+                                        <a href="#">
+                                            <img src="./image/GD.001686_DESKTOP_51361.jpg" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <p>Bình nóng lạnh gián tiếp Ariston 20 lít SL2 20 RS 2.5 FE MT</h3>
+                                        </a>
+                                        <h4>3,190,000đ</h4>
+                                        <div class="show_hidden">
+                                            <a href="#">
+                                                <i class='bx bxs-cart'>
+                                                    <p class="add_cart hover_flex">
+                                                        Thêm vào giỏ hàng
+                                                    </p>
+                                                </i>
+                                            </a>
+                                            <a href="#">
+                                                <i class='bx bxs-add-to-queue'>
+                                                    <p class="add_like hover_flex">
+                                                        Thêm vào mục ưu thích
+                                                    </p>
+                                                </i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="show">
+                                        <a href="#">
+                                            <img src="./image/GD.001686_DESKTOP_51361.jpg" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <p>Bình nóng lạnh gián tiếp Ariston 20 lít SL2 20 RS 2.5 FE MT</h3>
+                                        </a>
+                                        <h4>3,190,000đ</h4>
+                                        <div class="show_hidden">
+                                            <a href="#">
+                                                <i class='bx bxs-cart'>
+                                                    <p class="add_cart hover_flex">
+                                                        Thêm vào giỏ hàng
+                                                    </p>
+                                                </i>
+                                            </a>
+                                            <a href="#">
+                                                <i class='bx bxs-add-to-queue'>
+                                                    <p class="add_like hover_flex">
+                                                        Thêm vào mục ưu thích
+                                                    </p>
+                                                </i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="show">
+                                        <a href="#">
+                                            <img src="./image/GD.001686_DESKTOP_51361.jpg" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <p>Bình nóng lạnh gián tiếp Ariston 20 lít SL2 20 RS 2.5 FE MT</h3>
+                                        </a>
+                                        <h4>3,190,000đ</h4>
+                                        <div class="show_hidden">
+                                            <a href="#">
+                                                <i class='bx bxs-cart'>
+                                                    <p class="add_cart hover_flex">
+                                                        Thêm vào giỏ hàng
+                                                    </p>
+                                                </i>
+                                            </a>
+                                            <a href="#">
+                                                <i class='bx bxs-add-to-queue'>
+                                                    <p class="add_like hover_flex">
+                                                        Thêm vào mục ưu thích
+                                                    </p>
+                                                </i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="show">
+                                        <a href="#">
+                                            <img src="./image/GD.001686_DESKTOP_51361.jpg" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <p>Bình nóng lạnh gián tiếp Ariston 20 lít SL2 20 RS 2.5 FE MT</h3>
+                                        </a>
+                                        <h4>3,190,000đ</h4>
+                                        <div class="show_hidden">
+                                            <a href="#">
+                                                <i class='bx bxs-cart'>
+                                                    <p class="add_cart hover_flex">
+                                                        Thêm vào giỏ hàng
+                                                    </p>
+                                                </i>
+                                            </a>
+                                            <a href="#">
+                                                <i class='bx bxs-add-to-queue'>
+                                                    <p class="add_like hover_flex">
+                                                        Thêm vào mục ưu thích
+                                                    </p>
+                                                </i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slide 2 -->
+                            <div class="carousel-item">
+                                <div class="slider">
+                                    <div class="show">
+                                        <a href="#">
+                                            <img src="./image/GD.001686_DESKTOP_51361.jpg" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <p>Bình nóng lạnh gián tiếp Ariston 20 lít SL2 20 RS 2.5 FE MT</h3>
+                                        </a>
+                                        <h4>3,190,000đ</h4>
+                                        <div class="show_hidden">
+                                            <a href="#">
+                                                <i class='bx bxs-cart'>
+                                                    <p class="add_cart hover_flex">
+                                                        Thêm vào giỏ hàng
+                                                    </p>
+                                                </i>
+                                            </a>
+                                            <a href="#">
+                                                <i class='bx bxs-add-to-queue'>
+                                                    <p class="add_like hover_flex">
+                                                        Thêm vào mục ưu thích
+                                                    </p>
+                                                </i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="show">
+                                        <a href="#">
+                                            <img src="./image/GD.001686_DESKTOP_51361.jpg" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <p>Bình nóng lạnh gián tiếp Ariston 20 lít SL2 20 RS 2.5 FE MT</h3>
+                                        </a>
+                                        <h4>3,190,000đ</h4>
+                                        <div class="show_hidden">
+                                            <a href="#">
+                                                <i class='bx bxs-cart'>
+                                                    <p class="add_cart hover_flex">
+                                                        Thêm vào giỏ hàng
+                                                    </p>
+                                                </i>
+                                            </a>
+                                            <a href="#">
+                                                <i class='bx bxs-add-to-queue'>
+                                                    <p class="add_like hover_flex">
+                                                        Thêm vào mục ưu thích
+                                                    </p>
+                                                </i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="show">
+                                        <a href="#">
+                                            <img src="./image/GD.001686_DESKTOP_51361.jpg" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <p>Bình nóng lạnh gián tiếp Ariston 20 lít SL2 20 RS 2.5 FE MT</h3>
+                                        </a>
+                                        <h4>3,190,000đ</h4>
+                                        <div class="show_hidden">
+                                            <a href="#">
+                                                <i class='bx bxs-cart'>
+                                                    <p class="add_cart hover_flex">
+                                                        Thêm vào giỏ hàng
+                                                    </p>
+                                                </i>
+                                            </a>
+                                            <a href="#">
+                                                <i class='bx bxs-add-to-queue'>
+                                                    <p class="add_like hover_flex">
+                                                        Thêm vào mục ưu thích
+                                                    </p>
+                                                </i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="show">
+                                        <a href="#">
+                                            <img src="./image/GD.001686_DESKTOP_51361.jpg" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <p>Bình nóng lạnh gián tiếp Ariston 20 lít SL2 20 RS 2.5 FE MT</h3>
+                                        </a>
+                                        <h4>3,190,000đ</h4>
+                                        <div class="show_hidden">
+                                            <a href="#">
+                                                <i class='bx bxs-cart'>
+                                                    <p class="add_cart hover_flex">
+                                                        Thêm vào giỏ hàng
+                                                    </p>
+                                                </i>
+                                            </a>
+                                            <a href="#">
+                                                <i class='bx bxs-add-to-queue'>
+                                                    <p class="add_like hover_flex">
+                                                        Thêm vào mục ưu thích
+                                                    </p>
+                                                </i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="show">
+                                        <a href="#">
+                                            <img src="./image/GD.001686_DESKTOP_51361.jpg" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <p>Bình nóng lạnh gián tiếp Ariston 20 lít SL2 20 RS 2.5 FE MT</h3>
+                                        </a>
+                                        <h4>3,190,000đ</h4>
+                                        <div class="show_hidden">
+                                            <a href="#">
+                                                <i class='bx bxs-cart'>
+                                                    <p class="add_cart hover_flex">
+                                                        Thêm vào giỏ hàng
+                                                    </p>
+                                                </i>
+                                            </a>
+                                            <a href="#">
+                                                <i class='bx bxs-add-to-queue'>
+                                                    <p class="add_like hover_flex">
+                                                        Thêm vào mục ưu thích
+                                                    </p>
+                                                </i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- slide 3 -->
+                            <div class="carousel-item">
+                                <div class="slider">
+                                    <div class="show">
+                                        <a href="#">
+                                            <img src="./image/GD.001686_DESKTOP_51361.jpg" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <p>Bình nóng lạnh gián tiếp Ariston 20 lít SL2 20 RS 2.5 FE MT</h3>
+                                        </a>
+                                        <h4>3,190,000đ</h4>
+                                        <div class="show_hidden">
+                                            <a href="#">
+                                                <i class='bx bxs-cart'>
+                                                    <p class="add_cart hover_flex">
+                                                        Thêm vào giỏ hàng
+                                                    </p>
+                                                </i>
+                                            </a>
+                                            <a href="#">
+                                                <i class='bx bxs-add-to-queue'>
+                                                    <p class="add_like hover_flex">
+                                                        Thêm vào mục ưu thích
+                                                    </p>
+                                                </i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="show">
+                                        <a href="#">
+                                            <img src="./image/GD.001686_DESKTOP_51361.jpg" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <p>Bình nóng lạnh gián tiếp Ariston 20 lít SL2 20 RS 2.5 FE MT</h3>
+                                        </a>
+                                        <h4>3,190,000đ</h4>
+                                        <div class="show_hidden">
+                                            <a href="#">
+                                                <i class='bx bxs-cart'>
+                                                    <p class="add_cart hover_flex">
+                                                        Thêm vào giỏ hàng
+                                                    </p>
+                                                </i>
+                                            </a>
+                                            <a href="#">
+                                                <i class='bx bxs-add-to-queue'>
+                                                    <p class="add_like hover_flex">
+                                                        Thêm vào mục ưu thích
+                                                    </p>
+                                                </i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="show">
+                                        <a href="#">
+                                            <img src="./image/GD.001686_DESKTOP_51361.jpg" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <p>Bình nóng lạnh gián tiếp Ariston 20 lít SL2 20 RS 2.5 FE MT</h3>
+                                        </a>
+                                        <h4>3,190,000đ</h4>
+                                        <div class="show_hidden">
+                                            <a href="#">
+                                                <i class='bx bxs-cart'>
+                                                    <p class="add_cart hover_flex">
+                                                        Thêm vào giỏ hàng
+                                                    </p>
+                                                </i>
+                                            </a>
+                                            <a href="#">
+                                                <i class='bx bxs-add-to-queue'>
+                                                    <p class="add_like hover_flex">
+                                                        Thêm vào mục ưu thích
+                                                    </p>
+                                                </i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="show">
+                                        <a href="#">
+                                            <img src="./image/GD.001686_DESKTOP_51361.jpg" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <p>Bình nóng lạnh gián tiếp Ariston 20 lít SL2 20 RS 2.5 FE MT</h3>
+                                        </a>
+                                        <h4>3,190,000đ</h4>
+                                        <div class="show_hidden">
+                                            <a href="#">
+                                                <i class='bx bxs-cart'>
+                                                    <p class="add_cart hover_flex">
+                                                        Thêm vào giỏ hàng
+                                                    </p>
+                                                </i>
+                                            </a>
+                                            <a href="#">
+                                                <i class='bx bxs-add-to-queue'>
+                                                    <p class="add_like hover_flex">
+                                                        Thêm vào mục ưu thích
+                                                    </p>
+                                                </i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="show">
+                                        <a href="#">
+                                            <img src="./image/GD.001686_DESKTOP_51361.jpg" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <p>Bình nóng lạnh gián tiếp Ariston 20 lít SL2 20 RS 2.5 FE MT</h3>
+                                        </a>
+                                        <h4>3,190,000đ</h4>
+                                        <div class="show_hidden">
+                                            <a href="#">
+                                                <i class='bx bxs-cart'>
+                                                    <p class="add_cart hover_flex">
+                                                        Thêm vào giỏ hàng
+                                                    </p>
+                                                </i>
+                                            </a>
+                                            <a href="#">
+                                                <i class='bx bxs-add-to-queue'>
+                                                    <p class="add_like hover_flex">
+                                                        Thêm vào mục ưu thích
+                                                    </p>
+                                                </i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- nút prev và next -->
+                        <button class="carousel-control-prev btn-menu" type="button"
+                            data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next btn-menu" type="button"
+                            data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- end tìm kiếm nhiều nhất -->
+                <!-- Banner quảng cáo -->
+                <div class="QC_sanpham">
+                    <div class="col-6">
+                        <a href="#">
+                            <img src="./image/1992236_BANNER_DESKTOP_IMAGE_1_89765.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <a href="#">
+                            <img src="./image/1992261_BANNER_DESKTOP_IMAGE_1_90652.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <!-- end banner quảng cáo -->
+                <!-- sản phẩm đang hót -->
+                <div class="sanphamhot">
+                    <div class="row">
+                        <h1>Sản phẩm đang hót</h1>
+                        <hr>
+                    </div>
+                    <div class="sanphamhot_conten">
+                        <div class="row">
+                            <div class="show">
+                                <a href="#">
+                                    <img src="./image/GD.001686_DESKTOP_51361.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <p>Bình nóng lạnh gián tiếp Ariston 20 lít SL2 20 RS 2.5 FE MT</h3>
+                                </a>
+                                <h4>3,190,000đ</h4>
+                                <div class="show_hidden">
+                                    <a href="#">
+                                        <i class='bx bxs-cart'>
+                                            <p class="add_cart hover_flex">
+                                                Thêm vào giỏ hàng
+                                            </p>
+                                        </i>
+                                    </a>
+                                    <a href="#">
+                                        <i class='bx bxs-add-to-queue'>
+                                            <p class="add_like hover_flex">
+                                                Thêm vào mục ưu thích
+                                            </p>
+                                        </i>
+                                    </a>
+                                </div>
+                                <div class="button_show">
+                                    <a href="#">
+                                        Xem thêm sản phẩm tương tự
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="show">
+                                <a href="#">
+                                    <img src="./image/GD.001686_DESKTOP_51361.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <p>Bình nóng lạnh gián tiếp Ariston 20 lít SL2 20 RS 2.5 FE MT</h3>
+                                </a>
+                                <h4>3,190,000đ</h4>
+                                <div class="show_hidden">
+                                    <a href="#">
+                                        <i class='bx bxs-cart'>
+                                            <p class="add_cart hover_flex">
+                                                Thêm vào giỏ hàng
+                                            </p>
+                                        </i>
+                                    </a>
+                                    <a href="#">
+                                        <i class='bx bxs-add-to-queue'>
+                                            <p class="add_like hover_flex">
+                                                Thêm vào mục ưu thích
+                                            </p>
+                                        </i>
+                                    </a>
+                                </div>
+                                <div class="button_show">
+                                    <a href="#">
+                                        Xem thêm sản phẩm tương tự
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="show">
+                                <a href="#">
+                                    <img src="./image/GD.001686_DESKTOP_51361.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <p>Bình nóng lạnh gián tiếp Ariston 20 lít SL2 20 RS 2.5 FE MT</h3>
+                                </a>
+                                <h4>3,190,000đ</h4>
+                                <div class="show_hidden">
+                                    <a href="#">
+                                        <i class='bx bxs-cart'>
+                                            <p class="add_cart hover_flex">
+                                                Thêm vào giỏ hàng
+                                            </p>
+                                        </i>
+                                    </a>
+                                    <a href="#">
+                                        <i class='bx bxs-add-to-queue'>
+                                            <p class="add_like hover_flex">
+                                                Thêm vào mục ưu thích
+                                            </p>
+                                        </i>
+                                    </a>
+                                </div>
+                                <div class="button_show">
+                                    <a href="#">
+                                        Xem thêm sản phẩm tương tự
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="show">
+                                <a href="#">
+                                    <img src="./image/GD.001686_DESKTOP_51361.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <p>Bình nóng lạnh gián tiếp Ariston 20 lít SL2 20 RS 2.5 FE MT</h3>
+                                </a>
+                                <h4>3,190,000đ</h4>
+                                <div class="show_hidden">
+                                    <a href="#">
+                                        <i class='bx bxs-cart'>
+                                            <p class="add_cart hover_flex">
+                                                Thêm vào giỏ hàng
+                                            </p>
+                                        </i>
+                                    </a>
+                                    <a href="#">
+                                        <i class='bx bxs-add-to-queue'>
+                                            <p class="add_like hover_flex">
+                                                Thêm vào mục ưu thích
+                                            </p>
+                                        </i>
+                                    </a>
+                                </div>
+                                <div class="button_show">
+                                    <a href="#">
+                                        Xem thêm sản phẩm tương tự
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="show">
+                                <a href="#">
+                                    <img src="./image/GD.001686_DESKTOP_51361.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <p>Bình nóng lạnh gián tiếp Ariston 20 lít SL2 20 RS 2.5 FE MT</h3>
+                                </a>
+                                <h4>3,190,000đ</h4>
+                                <div class="show_hidden">
+                                    <a href="#">
+                                        <i class='bx bxs-cart'>
+                                            <p class="add_cart hover_flex">
+                                                Thêm vào giỏ hàng
+                                            </p>
+                                        </i>
+                                    </a>
+                                    <a href="#">
+                                        <i class='bx bxs-add-to-queue'>
+                                            <p class="add_like hover_flex">
+                                                Thêm vào mục ưu thích
+                                            </p>
+                                        </i>
+                                    </a>
+                                </div>
+                                <div class="button_show">
+                                    <a href="#">
+                                        Xem thêm sản phẩm tương tự
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="show">
+                                <a href="#">
+                                    <img src="./image/GD.001686_DESKTOP_51361.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <p>Bình nóng lạnh gián tiếp Ariston 20 lít SL2 20 RS 2.5 FE MT</h3>
+                                </a>
+                                <h4>3,190,000đ</h4>
+                                <div class="show_hidden">
+                                    <a href="#">
+                                        <i class='bx bxs-cart'>
+                                            <p class="add_cart hover_flex">
+                                                Thêm vào giỏ hàng
+                                            </p>
+                                        </i>
+                                    </a>
+                                    <a href="#">
+                                        <i class='bx bxs-add-to-queue'>
+                                            <p class="add_like hover_flex">
+                                                Thêm vào mục ưu thích
+                                            </p>
+                                        </i>
+                                    </a>
+                                </div>
+                                <div class="button_show">
+                                    <a href="#">
+                                        Xem thêm sản phẩm tương tự
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="show">
+                                <a href="#">
+                                    <img src="./image/GD.001686_DESKTOP_51361.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <p>Bình nóng lạnh gián tiếp Ariston 20 lít SL2 20 RS 2.5 FE MT</h3>
+                                </a>
+                                <h4>3,190,000đ</h4>
+                                <div class="show_hidden">
+                                    <a href="#">
+                                        <i class='bx bxs-cart'>
+                                            <p class="add_cart hover_flex">
+                                                Thêm vào giỏ hàng
+                                            </p>
+                                        </i>
+                                    </a>
+                                    <a href="#">
+                                        <i class='bx bxs-add-to-queue'>
+                                            <p class="add_like hover_flex">
+                                                Thêm vào mục ưu thích
+                                            </p>
+                                        </i>
+                                    </a>
+                                </div>
+                                <div class="button_show">
+                                    <a href="#">
+                                        Xem thêm sản phẩm tương tự
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="show">
+                                <a href="#">
+                                    <img src="./image/GD.001686_DESKTOP_51361.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <p>Bình nóng lạnh gián tiếp Ariston 20 lít SL2 20 RS 2.5 FE MT</h3>
+                                </a>
+                                <h4>3,190,000đ</h4>
+                                <div class="show_hidden">
+                                    <a href="#">
+                                        <i class='bx bxs-cart'>
+                                            <p class="add_cart hover_flex">
+                                                Thêm vào giỏ hàng
+                                            </p>
+                                        </i>
+                                    </a>
+                                    <a href="#">
+                                        <i class='bx bxs-add-to-queue'>
+                                            <p class="add_like hover_flex">
+                                                Thêm vào mục ưu thích
+                                            </p>
+                                        </i>
+                                    </a>
+                                </div>
+                                <div class="button_show">
+                                    <a href="#">
+                                        Xem thêm sản phẩm tương tự
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="show">
+                                <a href="#">
+                                    <img src="./image/GD.001686_DESKTOP_51361.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <p>Bình nóng lạnh gián tiếp Ariston 20 lít SL2 20 RS 2.5 FE MT</h3>
+                                </a>
+                                <h4>3,190,000đ</h4>
+                                <div class="show_hidden">
+                                    <a href="#">
+                                        <i class='bx bxs-cart'>
+                                            <p class="add_cart hover_flex">
+                                                Thêm vào giỏ hàng
+                                            </p>
+                                        </i>
+                                    </a>
+                                    <a href="#">
+                                        <i class='bx bxs-add-to-queue'>
+                                            <p class="add_like hover_flex">
+                                                Thêm vào mục ưu thích
+                                            </p>
+                                        </i>
+                                    </a>
+                                </div>
+                                <div class="button_show">
+                                    <a href="#">
+                                        Xem thêm sản phẩm tương tự
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="show">
+                                <a href="#">
+                                    <img src="./image/GD.001686_DESKTOP_51361.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <p>Bình nóng lạnh gián tiếp Ariston 20 lít SL2 20 RS 2.5 FE MT</h3>
+                                </a>
+                                <h4>3,190,000đ</h4>
+                                <div class="show_hidden">
+                                    <a href="#">
+                                        <i class='bx bxs-cart'>
+                                            <p class="add_cart hover_flex">
+                                                Thêm vào giỏ hàng
+                                            </p>
+                                        </i>
+                                    </a>
+                                    <a href="#">
+                                        <i class='bx bxs-add-to-queue'>
+                                            <p class="add_like hover_flex">
+                                                Thêm vào mục ưu thích
+                                            </p>
+                                        </i>
+                                    </a>
+                                </div>
+                                <div class="button_show">
+                                    <a href="#">
+                                        Xem thêm sản phẩm tương tự
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="show">
+                                <a href="#">
+                                    <img src="./image/GD.001686_DESKTOP_51361.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <p>Bình nóng lạnh gián tiếp Ariston 20 lít SL2 20 RS 2.5 FE MT</h3>
+                                </a>
+                                <h4>3,190,000đ</h4>
+                                <div class="show_hidden">
+                                    <a href="#">
+                                        <i class='bx bxs-cart'>
+                                            <p class="add_cart hover_flex">
+                                                Thêm vào giỏ hàng
+                                            </p>
+                                        </i>
+                                    </a>
+                                    <a href="#">
+                                        <i class='bx bxs-add-to-queue'>
+                                            <p class="add_like hover_flex">
+                                                Thêm vào mục ưu thích
+                                            </p>
+                                        </i>
+                                    </a>
+                                </div>
+                                <div class="button_show">
+                                    <a href="#">
+                                        Xem thêm sản phẩm tương tự
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- sang trang -->
+                            <div class="nav_button">
+                                <nav aria-label="...">
+                                    <ul class="pagination pagination-sm">
+                                      <li class="page-item active" aria-current="page">
+                                        <span class="page-link">1</span>
+                                      </li>
+                                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!-- end sang trang -->
+                        </div>
+                    </div>
+                </div>
+                <!-- end sản phẩm đang hót -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

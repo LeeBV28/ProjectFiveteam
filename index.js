@@ -20,7 +20,7 @@ app.set('view engine', 'ejs');
 
 // Home
 app.get('/',function(req,res) {
-    res.render("home")
+    res.render("body_home")
 });
 
 // danh sách sản phẩm theo loại sản phẩm
