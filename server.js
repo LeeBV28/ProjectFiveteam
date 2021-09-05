@@ -47,6 +47,9 @@ app.get('/cv9',function(req,res){
 app.get('/cv10',function(req,res){
     res.render('cv10');
 });
-app.listen(5000,function(){
+app.get('/chitietsp',function(req,res){
+    res.render('chitiettv');
+});
+app.listen(8888,function(){
     console.log('Sever is running...');
 });
