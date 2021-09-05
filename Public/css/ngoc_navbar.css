@@ -40,13 +40,19 @@ height: 310px;
 
 }
 
+.aside__sale-item-link:hover {
+    text-decoration: none;
+    opacity: .7;
+}
+
 .aside__sale-item-link {
     display: flex;
+
 }
 
 .aside__sale-item-img {
     height: 60px;
-
+    width: auto;
 }
 
 .aside__sale-item-content {
