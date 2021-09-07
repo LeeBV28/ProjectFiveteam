@@ -1,7 +1,7 @@
 .footer__contain {
     background-color: #dddddd;
     display: flex;
-
+    padding-left: 32px;
 }
 
 .footer__content {
@@ -15,7 +15,7 @@
 }
 
 .footer__information-content-title img {
-    height: 80px;
+    height: 72px;
     width: auto;
 }
 
@@ -25,6 +25,7 @@
 
 .footer__title {
     border-bottom: 2px solid blue;
+    margin-bottom: 28px;
 }
 
 .footer__title-heading {
@@ -32,13 +33,26 @@
 }
 
 .footer__links-list {
+    padding-left: 0;
+}
 
+.footer__links-list li {
+    margin: 12px 0;
 }
 
 .footer__link {
+
     text-decoration: none;
 }
 
 .footer__certification {
-
+    flex: 2;
+    display: flex;
+    justify-content: center;
 }
+
+.footer__certification img {
+    height: 72px;
+    width: auto;
+}
+
