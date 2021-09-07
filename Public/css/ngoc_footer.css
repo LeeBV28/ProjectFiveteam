@@ -1,0 +1,44 @@
+.footer__contain {
+    background-color: #dddddd;
+    display: flex;
+
+}
+
+.footer__content {
+    margin: 0 8px;
+    flex: 1;
+    padding: 8px;
+}
+
+.footer__information-content-title {
+
+}
+
+.footer__information-content-title img {
+    height: 80px;
+    width: auto;
+}
+
+.footer__information-content {
+    margin: 8px 0;
+}
+
+.footer__title {
+    border-bottom: 2px solid blue;
+}
+
+.footer__title-heading {
+    font-size: 18px;
+}
+
+.footer__links-list {
+
+}
+
+.footer__link {
+    text-decoration: none;
+}
+
+.footer__certification {
+
+}
