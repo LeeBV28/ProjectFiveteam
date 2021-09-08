@@ -150,9 +150,12 @@
 </script>
 <script >
     const listsProduct = $('.js__list-product')
-    const productSubHeading = $('.product-content__sub-heading')
+    const productSubs =  document.getElementsByClassName('product-content__sub')
+    const productLinks =  document.getElementsByClassName('product-content__sub-list')
+
 
     const main = {
+
         productLists: [
             {
                 imgIcon : 'https://hc.com.vn/i/ecommerce/media/2823891_HOMEICON_68004.png',
@@ -168,93 +171,218 @@
                     },
                     {
                         title : 'Loa, Âm Thanh',
-                        contents : ['San Sung','Soni','LG','TCL','Panasonic','Tosiba']
+                        contents : ['San Sung','Soni','LG','TCL','Panasonic', 'Tosiba']
                     }
                 ]
             },
             {
                 imgIcon : 'https://hc.com.vn/i/ecommerce/media/2828117_HOMEICON_67993.png',
-                productname : 'Tủ lanh, Tủ Đông, Tủ Mát'
+                productname : 'Tủ lanh, Tủ Đông, Tủ Mát',
+                details : [
+                    {
+                        title : 'Tủ Lạnh',
+                        contents : ['San Sung','Hitachi','Panasonic','Aqua','LG','Tosiba','Electrolux','Sharp']
+                    },
+                    {
+                        title : 'Loại Tủ Lạnh',
+                        contents : ['Tủ lạnh mini','Tủ lạnh 2 cánh','Tủ lạnh 3,4 cánh','Tủ lạnh 5 cánh','Tủ lạnh side by side','Smart Tvi','LifeStype Tivi']
+                    },
+                    {
+                        title : 'Tủ Đông',
+                        contents : ['Sanaky','Kangaroo','Alaska']
+                    },
+                    {
+                        title : 'Tủ Mát',
+                        contents : ['Sanaky','Kangaroo','Alaska']
+                    }
+                ]
             },
             {
                 imgIcon : 'https://hc.com.vn/i/ecommerce/media/2828185_HOMEICON_67996.png',
-                productname : 'Máy giặt, Sấy Quần Áo'
+                productname : 'Máy Giặt, Sấy Quần Áo',
+                details : [
+                    {
+                        title : 'Máy Giặt',
+                        contents : ['San Sung','Electrolux','LG','Aqua','Panasonic','Tosiba','Hitachi']
+                    },
+                    {
+                        title : 'Loại Máy Giặt',
+                        contents : ['Lồng ngang','Lồng đứng','Máy giặt sấy']
+                    },
+                    {
+                        title : 'Máy Sấy Quần Áo',
+                        contents : ['Electrolux','San Sung','LG']
+                    }
+                ]
             },
             {
                 imgIcon : 'https://hc.com.vn/i/ecommerce/media/2828228_HOMEICON_67997.png',
-                productname : 'Điều Hòa Nhiệt Độ'
+                productname : 'Điều Hòa Nhiệt Độ',
+                details : [
+                    {
+                        title : 'Điều Hòa',
+                        contents : ['Daikin','Gree','San Sung','Mitsubishi Electric','LG','Aqua','Casper','TCL','Panasonic','Tosiba']
+                    },
+                    {
+                        title : 'Tiêu Chí',
+                        contents : ['Điều hòa inverter','Tiết kiệm điện','Điều hòa 9000 BTU','Điều hòa 12000 BTU','Điều hòa 1 chiều','Điều hòa 2 chiều']
+                    },
+                    {
+                        title : 'Loại Điều Hòa',
+                        contents : ['Điều hòa treo tường','Điều hòa tủ đứng','Âm trần']
+                    }
+                ]
             },
             {
                 imgIcon : 'https://hc.com.vn/i/ecommerce/media/2828685_HOMEICON_67998.png',
-                productname : 'Bình Nóng Lạnh, Lọc Nước'
+                productname : 'Bình Nóng Lạnh, Lọc Nước',
+                details : [
+                    {
+                        title : 'Bình Nóng Lạnh',
+                        contents : ['Ariston','Ferroli','Kangaroo']
+                    },
+                    {
+                        title : 'Máy Lọc Nươc',
+                        contents : ['Karofi','Kangaroo','A O Smith','Huyndai','Sunhouse','Fujie','Coway']
+                    }
+                ]
             },
             {
                 imgIcon : 'https://hc.com.vn/i/ecommerce/media/2829114_HOMEICON_67999.png',
-                productname : 'Điện Gia Dụng'
+                productname : 'Điện Gia Dụng',
+                details : [
+                    {
+                        title : 'Dụng Cụ Nhà Bếp',
+                        contents : ['Nồi cơm điện','Lò vi song','Lò nướng','Nồi chiên không dầu','vỉ nướng','Nồi áp suất điện','Nồi lẩu điện','Ấm siêu tốc','Bình thủy điện','Máy rủa bat','Máy sấy bát','Bếp từ','Bếp hồng ngoại','Bếp ga','Máy xay, máy ép']
+                    },
+                    {
+                        title : 'Thiết Bị Gia Đình',
+                        contents : ['Máy lọc không khí','Máy hút bụi','Quạt điều hòa','Quạt','Tủ sấy quần áo','Máy hút mùi','Bàn là','Máy sấy tóc','Thiết bị sưởi']
+                    },
+                    {
+                        title : 'Sản Phẩm Khác',
+                        contents : ['Máy bơm nước','Máy phát điện','Máy phun xịt rửa','Máy khoan','Ổn áp','Đèn điện']
+                    }
+
+                ]
             },
             {
                 imgIcon : 'https://hc.com.vn/i/ecommerce/media/2829259_HOMEICON_68001.png',
-                    productname : 'Laptop, Điện Thoại'
+                    productname : 'Laptop, Điện Thoại',
+                details : [
+                    {
+                        title : 'Laptop',
+                        contents : ['Macbook','Dell','Asus','HP','Acer','Lenovo','LG','Gigabyte']
+                    },
+                    {
+                        title : 'Điện Thoại',
+                        contents : ['Sum Sung','IPhone','Oppo','Nokia','Vivo','Realme','Masstel','Xiaomi','Vsmart','Huawei']
+                    },
+                    {
+                        title : 'Tablet',
+                        contents : ['Ipad','Sumsung']
+                    }
+                ]
             },
             {
                 imgIcon : 'https://hc.com.vn/i/ecommerce/media/2829262_HOMEICON_68003.png',
-                    productname : 'PC, Màn Hình, Máy Văn Phòng'
+                    productname : 'PC, Màn Hình, Máy Văn Phòng',
+                details : [
+                    {
+                        title : 'Máy Tính Để Bàn',
+                        contents : ['Dell','HP','Apple','SingPC','Lenovo','Asus']
+                    },
+                    {
+                        title : 'Màn Hình Máy Tính',
+                        contents : ['Dell','HP','Sumsung','Acer','Lenivo','Asus','LG']
+                    },
+                    {
+                        title : 'Máy Văn Phòng',
+                        contents : ['Máy in','Máy chiếu','Máy scan','Máy đếm tiền','Máy tính tay','Máy hủy tài liêu','Bộ phụ kiện máy chiếu','Điện thoại bàn']
+                    }
+                ]
             },
             {
                 imgIcon : 'https://hc.com.vn/i/ecommerce/media/2829261_HOMEICON_68002.png',
-                productname : 'Đồng Hồ, Máy Ảnh'
+                productname : 'Đồng Hồ, Máy Ảnh',
+                details : [
+                    {
+                        title : 'Đông Hồ',
+                        contents : ['Apple','Sumsung','Masstel']
+                    },
+                    {
+                        title : 'Kỹ Thuật Số',
+                        contents : ['Máy ảnh','Máy quay']
+                    },
+                    {
+                        title : 'Phụ Kiện',
+                        contents : ['Loa vi tính','Thiết bị lưu trữ','Thiết bị mạng','Chuột & bàn phím','Tai nghe','Loa bluetooth','Pin sạc dự phòng','Cáp ,củ sạc ,đầu đọc thẻ']
+                    }
+                ]
             }
         ],
 
         renderProductContent :function() {
-            const productContentHTML =this.productLists.map(product => {
-            return  `<li class="product-content">
+            var productContentHTMLs=''
+            for (var i = 0 ; i < this.productLists.length ; i ++) {
+                var productContentHTML =
+                            `<li class="product-content">
                                 <div class="product-content__link">
-                                    <img class="product-content__icon" src=${product.imgIcon} alt="" style="color: #050505">
-                                    <span style="font-style: normal">${product.productname}</span>
+                                    <img class="product-content__icon" src=${this.productLists[i].imgIcon} alt="" style="color: #050505">
+                                    <span style="font-style: normal">${this.productLists[i].productname}</span>
                                     <div class="product-content__sub">
-                                        <div class="product-content__sub-item">
-                                            <h4 class="product-content__sub-heading">
-                                                Tivi
-                                            </h4>
-                                            <div class="product-content__sub-list">
-                                                <span><a href="" class="product-content__sub-link">1</a></span>
-                                                <span><a href="" class="product-content__sub-link">2</a></span>
-                                                <span><a href="" class="product-content__sub-link">3</a></span>
-                                                <span><a href="" class="product-content__sub-link">4</a></span>
-                                            </div>
-                                        </div>
-                                        <div class="product-content__sub-item">
-                                            <h4 class="product-content__sub-heading">
-                                                Tivi
-                                            </h4>
-                                            <ul class="product-content__sub-list">
-                                                <li><a href="" class="product-content__sub-link">1</a></li>
-                                                <li><a href="" class="product-content__sub-link">2</a></li>
-                                                <li><a href="" class="product-content__sub-link">3</a></li>
-                                                <li><a href="" class="product-content__sub-link">4</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="product-content__sub-item">
-                                            <h4 class="product-content__sub-heading">
-                                                Tivi
-                                            </h4>
-                                            <ul class="product-content__sub-list">
-                                                <li><a href="" class="product-content__sub-link">1</a></li>
-                                                <li><a href="" class="product-content__sub-link">2</a></li>
-                                                <li><a href="" class="product-content__sub-link">3</a></li>
-                                                <li><a href="" class="product-content__sub-link">4</a></li>
-                                            </ul>
-                                        </div>
+
                                     </div>
                                 </div>
                             </li>`
-            })
-            listsProduct.innerHTML = productContentHTML.join('')
-        },
-        renderSubtContent :function() {
+                productContentHTMLs += productContentHTML
+            }
+            listsProduct.innerHTML = productContentHTMLs
 
+        },
+
+        renderProductSub :function() {
+
+            for (var i = 0 ; i < this.productLists.length ; i ++) {
+                var productSubHTMLs=''
+
+                for (var j = 0 ; j < this.productLists[i].details.length ; j++ ){
+                    var productSubHTML =
+                    `                    <div class="product-content__sub-item">
+                                            <h4 class="product-content__sub-heading">
+                                                ${this.productLists[i].details[j].title}
+                                            </h4>
+                                            <div class="product-content__sub-list">
+
+                                            </div>
+                                        </div>`
+                    productSubHTMLs += productSubHTML
+                }
+                productSubs[i].innerHTML = productSubHTMLs
+
+            }
+        },
+
+        renderProductLink :function() {
+            var index = -1
+            for (var i = 0 ; i < this.productLists.length ; i ++) {
+                for (var j = 0 ; j < this.productLists[i].details.length ; j++ ){
+                    index ++
+                    var productLinkHTMLs=''
+                    for (var k = 0 ;k< this.productLists[i].details[j].contents.length ; k++){
+                        var productLinkHTML =
+                                        `<span><a href="" class="product-content__sub-link">${this.productLists[i].details[j].contents[k]}</a></span>`
+                        productLinkHTMLs += productLinkHTML
+                    }
+                    console.log(index,i,j,k,productLinkHTMLs)
+                    productLinks[index].innerHTML = productLinkHTMLs
+                }
+
+            }
         }
+
     }
     main.renderProductContent()
+    main.renderProductSub()
+    main.renderProductLink()
 </script>
