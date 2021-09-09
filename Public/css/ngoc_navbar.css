@@ -1,11 +1,23 @@
+.nav-null {
+    width: 20%;
+}
+
+.slider-width {
+    width: 55%;
+}
 
 .my__slide {
-height: 310px;
+    height: 310px;
+}
+
+.nav-aside {
+    width: 25%;
+    padding-left: 16px;
 }
 
 .aside__sales {
     padding: 0;
-height: 310px;
+    height: 310px;
     border: 1px solid #ddd;
     border-top-right-radius: 4px;
     border-top-left-radius: 4px;
