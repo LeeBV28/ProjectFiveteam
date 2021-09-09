@@ -1,9 +1,17 @@
+.nav-null {
+    width: 20%;
+}
+
+.slider-width {
+    width: 55%;
+}
 
 .my__slide {
     height: 310px;
 }
 
 .nav-aside {
+    width: 25%;
     padding-left: 16px;
 }
 
