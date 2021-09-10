@@ -1,3 +1,12 @@
+.my-navbar {
+    display: flex;
+    padding: 20px 4%;
+}
+
+.my-navbar:last-child {
+
+}
+
 .nav-null {
     width: 20%;
 }
@@ -7,17 +16,21 @@
 }
 
 .my__slide {
-    height: 310px;
+    /*height: 310px;*/
 }
 
 .nav-aside {
     width: 25%;
     padding-left: 16px;
 }
+.carousel-inner {
+    height: 100%;
+    padding-left: 8px;
+}
 
 .aside__sales {
     padding: 0;
-    height: 310px;
+    height: 100%;
     border: 1px solid #ddd;
     border-top-right-radius: 4px;
     border-top-left-radius: 4px;
@@ -76,4 +89,45 @@
 .aside__sale-item-count {
     color: red;
     font-weight: 600;
+}
+
+@media screen and (max-width: 1260px){
+    .my-navbar {
+        flex-direction: column;
+
+    }
+
+    .slider-width,
+    .nav-aside{
+        width: 100%;
+        padding: 0 10%;
+
+    }
+
+    .nav-aside {
+        margin-top: 20px;
+    }
+
+    .carousel-inner {
+         padding-left: 0px;
+    }
+
+    .aside__sale-list {
+
+        padding: 0 16px;
+        display: flex;
+    }
+
+}
+
+/*Ipad : width<1260px and width >= 992px */
+@media only screen and (max-width: 1260px) and (min-width: 992px){
+
+
+}
+
+@media only screen and  (max-width: 992px) {
+    .nav-aside {
+        display: none;
+    }
 }
