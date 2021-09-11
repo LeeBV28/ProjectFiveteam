@@ -1,28 +1,25 @@
-<div class="header__top">
-    <div class="container">
+<div class="my-header">
+    <div class="header__top">
         <div class="row">
             <div class="header__logo">
                 <img class="header__logo-img" src="https://hc.com.vn/i/hc_ecommerce/image/catalog/logo.png" alt="" id="header-logo">
             </div>
 
             <div class="header__search">
-
                 <input type="text" class="header__search-content" placeholder="Tìm kiếm...">
                 <button class="header__search-btn"><i class="search-btn-icon ti-search"></i></button>
             </div>
 
             <div class="header__cart">
-                <i class="cart-icon ti-shopping-cart">   Giỏ Hàng</i>
+                <i class="cart-icon ti-shopping-cart"><span>   Giỏ Hàng</span></i>
                 <div style="padding: 0 10px ;    line-height: 15px;"> | </div>
-                <i class="cart-icon ti-heart">  Yêu thích</i>
+                <i class="cart-icon ti-heart"><span>  Yêu thích</span></i>
             </div>
-
         </div>
     </div>
-</div>
-<div class="header__botton">
-    <div class="container">
-        <div class="row">
+    <div class="header__botton">
+        <div class="header__botton-container">
+
             <div class="header__list-product">
                 <i class="list-product ti-align-justify"></i>
                 <p> Sản Phẩm</p>
@@ -41,20 +38,20 @@
                     <li><a href="#" class="header__navbar-content">Tìm Siêu Thị </a></li>
                 </ul>
             </div>
-            <div class="header-log">
-                <div class="row">
-                <ul class="header__account col-md-7">
-                    <li><botton class="btn__sign-in"><i class="ti-lock">Đăng Nhập</i></botton></li>
-                    <div style="padding: 0 10px ;    line-height: 30px;"> | </div>
-                    <li><botton class="btn__sign-up"><i class="ti-pencil-alt">Đăng Kí</i></botton></li>
-                </ul>
-                <div class="header__hotline col-md-5"><i class="ti-headphone-alt"></i> Hotline : 0123456789</div>
+            <div class="sub-navbar">
+                <i class="sub-navbar-icon ti-align-justify"></i>
             </div>
+            <div class="header-log">
+                    <ul class="header__account">
+                        <li><botton class="btn__sign-in"><i class="ti-lock">Đăng Nhập</i></botton></li>
+                        <div style="padding: 0 10px ;    line-height: 30px;"> | </div>
+                        <li><botton class="btn__sign-up"><i class="ti-pencil-alt">Đăng Kí</i></botton></li>
+                    </ul>
+                <div class="header__hotline"><i class="ti-headphone-alt"></i> Hotline : 0123456789</div>
             </div>
         </div>
     </div>
 </div>
-
 
 <script>
     const $ = document.querySelector.bind(document);

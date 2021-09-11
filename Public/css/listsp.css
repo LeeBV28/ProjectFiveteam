@@ -14,7 +14,7 @@ section {
     margin-top: 30px;
 }
 /* ẩn menu */
-.list-product-detail.list-product-detail {
+.list-product-detail {
     display: none;
 }
 .header__list-product:hover .list-product-detail.list-product-detail {

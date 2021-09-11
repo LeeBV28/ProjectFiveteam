@@ -2,6 +2,7 @@
     background-color: #dddddd;
     display: flex;
     padding-left: 32px;
+    padding-top: 16px;
 }
 
 .footer__content {
