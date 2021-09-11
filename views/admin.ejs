@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('head') %>
+    <title>Dashboard</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/admin.css">
+    <!-- icon -->
+    <script src="https://kit.fontawesome.com/7fbca7d9d5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">    
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="header-dashboard">
+                <div class="logo">
+                    <h3>LoGo</h3>
+                </div>
+                <div class="nav">
+                    <div class="notification">
+                        <i class='bx bxs-bell'></i>
+                    </div>
+                    <div class="info_user">
+                        <img src="./image/user.png" alt="Avatar">
+                        <p>Name admin</p>
+                        <div class="more_user">
+                            <i class='bx bxs-down-arrow'></i>
+                            <ul class="more_menu">
+                                <li>
+                                    <i class="fas fa-cog"></i>
+                                    <p>Cài đặt</p>
+                                </li>
+                                <li>
+                                    <i class="fas fa-sign-out-alt"></i>
+                                    <p>Đăng Xuất</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 slider_left">
+                <div class="home slider-child active">
+                    <i class='bx bx-home-alt'></i>
+                    <p>Trang chủ</p>
+                </div>
+                <div class="store slider-child">
+                    <i class='bx bx-store-alt'></i>
+                    <p>Kho Hàng - Sản phẩm</p>
+                </div>
+                <div class="order slider-child">
+                    <i class='bx bx-cart'></i>
+                    <p>Quản lý đơn hàng</p>
+                </div>
+                <div class="interface slider-child">
+                    <i class='bx bx-news'></i>
+                    <p>Chỉnh sửa trang chủ</p>
+                </div>
+                <div class="recruitment slider-child">
+                    <i class='bx bx-id-card' ></i>
+                    <p>Quản lý tuyển dụng</p>
+                </div>
+            </div>
+            <div class="col add-body">
+                <%-include('body_admin')%>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/admin.js"></script>
+</body>
+</html>

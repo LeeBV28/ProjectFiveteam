@@ -102,6 +102,7 @@ section {
     font-size: 20px;
     color: var(--color-blues);
     margin: 0;
+    text-align: center;
 }
 .show .show_hidden {
     display: none;
