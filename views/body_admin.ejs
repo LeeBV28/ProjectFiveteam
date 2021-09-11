@@ -1,0 +1,762 @@
+<!-- Home -->
+<div class="body home active">
+  <h1>Home đang phát triển</h1>
+</div>
+<!-- end home -->
+
+<!-- Kho hàng - Sản phẩm -->
+<div class="body khoHang_sanPham">
+  <div class="tab-handle">
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <span class="nav-link nhapkho active active-default" href="#">Nhập Kho</span>
+      </li>
+      <li class="nav-item">
+        <span class="nav-link xuatkho" href="#">Xuất Kho</span>
+      </li>
+      <li class="nav-item">
+        <span class="nav-link qlkho" href="#">Quản Lý Kho</span>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="dashboard-body active active-default nhapkho">
+    <form action="#" method="post">
+      <div class="row">
+        <h1>Loại Sản Phẩm</h1>
+        <div class="col">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Thêm theo loại sản phẩm đã có sẵn</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="col">
+          <input type="email" name="newloaisp" class="form-control" placeholder="Nhập loại sản phẩm mới">
+        </div>
+      </div>
+      <div class="row">
+        <h1>Nhà Cung cấp</h1>
+        <div class="col">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Thêm theo nhà cung cấp sẵn có</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="col">
+          <input type="email" name="newnhacc" class="form-control" placeholder="Nhập vào nhà cung cấp mới">
+        </div>
+      </div>
+      <div class="row">
+        <h1>Khai báo thông tin sản phẩm</h1>
+        <div class="col-5">
+          <label for="tensp" class="form-label">Tên Sản Phẩm</label>
+          <input type="text" class="form-control" id="tensp" required>
+        </div>
+        <div class="col">
+          <label for="soluong" class="form-label">Số Lượng</label>
+          <input type="number" class="form-control" id="soluong" required>
+        </div>
+        <div class="col">
+          <label for="gia" class="form-label">Giá</label>
+          <input type="number" class="form-control" id="gia" required>
+        </div>
+        <div class="col">
+          <label for="donvi" class="form-label">Đơn Vị</label>
+          <input type="text" class="form-control" id="donvi" required>
+        </div>
+      </div>
+      <div class="row checkbox">
+        <div class="col-12">
+          <input class="form-check-input" type="checkbox" id="check" required>
+          <label class="form-check-label" for="check">
+          Đã check đúng và đủ thông tin cần thêm
+          </label>
+        </div>
+        <div class="d-grid gap-2 col-6 mx-auto">
+          <button class="btn btn-primary btn-chantrang" type="submit">Nhập kho sản phẩm</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  
+  <div class="dashboard-body xuatkho">
+    <form action="#" method="post">
+      <div class="row">
+        <h1>Khai báo thông tin xuất kho</h1>
+        <div class="col-12">
+          <label for="tenspxuatkho" class="form-label">Tên Sản phẩm</label>
+          <select class="form-select" id="tenspxuatkho" aria-label="Default select example">
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label for="solong" class="form-label">Số Lượng</label>
+          <input type="number" class="form-control" id="soluong" required>
+        </div>
+        <div class="col">
+          <label for="datexuat" class="form-label">Ngày Xuất Kho</label>
+          <input type="date" class="form-control" id="datexuat" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label for="lydoxuat" class="form-label">Lý Do</label>
+          <textarea type="text" class="form-control" id="lydoxuat" required></textarea>
+        </div>
+      </div>
+      <div class="row">      
+        <div class="d-grid gap-2 col-6 mx-auto">
+          <button class="btn btn-primary btn-chantrang" type="submit">Xuất Kho</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  
+  <div class="dashboard-body qlkho">
+    <h1>Thống kê kho hàng</h1>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Tên Sản Phẩm</th>
+          <th scope="col">Số Lượng</th>
+          <th scope="col">Đơn Vị</th>
+          <th scope="col">Giá</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+          <td>10000</td>
+          <td>
+            <button class="btn btn-primary">Sửa</button>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+          <td>12383273</td>
+          <td>
+            <button class="btn btn-primary">Sửa</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="row align-center">
+      <div class="col-8 timkiem">
+        <form action="#">        
+          <div class="row">
+            <div class="col-8">
+              <input type="text" class="form-control" id="timkiem" placeholder="Tìm Kiếm" required>
+            </div>
+            <div class="col">
+              <button class="btn btn-primary">Tìm Kiếm</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col list-button">
+        <div class="nav_button">
+          <nav aria-label="...">
+              <ul class="pagination pagination-sm">
+                <li class="page-item active" aria-current="page">
+                  <span class="page-link">1</span>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+              </ul>
+          </nav>
+      </div>
+      </div>
+    </div>  
+  </div>
+</div>
+<!-- End Kho hàng - Sản Phẩm -->
+
+<!-- Quản lý Đơn hàng -->
+<div class="body order">
+  <div class="tab-handle">
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <span class="nav-link choguihang active active-default">Chờ Gửi Hàng</span>
+      </li>
+      <li class="nav-item">
+        <span class="nav-link chodathang">Chờ Đặt Hàng</span>
+      </li>
+      <li class="nav-item">
+        <span class="nav-link themdon">Thêm Đơn Hàng</span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="dashboard-body ship active active-default">
+    <h1>Đơn hàng chờ gửi</h1>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">Ngày Đặt</th>
+          <th scope="col">Người Nhận</th>
+          <th scope="col">Địa Chỉ</th>
+          <th scope="col">Số Điện Thoại</th>
+          <th scope="col">Tên Sản Phẩm</th>
+          <th scope="col">Số Lượng</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">10/09/2021</th>
+          <td>Lê BV</td>
+          <td>Đại Mỗ, Hà Nội</td>
+          <td>0423784238</td>
+          <td>Máy Tính Macbook M1</td>
+          <td>10</td>
+          <td>
+            
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">10/09/2021</th>
+          <td>Lê BV</td>
+          <td>Đại Mỗ, Hà Nội</td>
+          <td>0423784238</td>
+          <td>Máy Tính Macbook M1</td>
+          <td>10</td>
+          <td>
+            <button class="btn btn-primary done">Hoàn Thành</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="row align-center">
+      <div class="col-8 timkiem">
+        <form action="#">        
+          <div class="row">
+            <div class="col-8">
+              <input type="text" class="form-control" id="timkiem" placeholder="Tìm Kiếm" required>
+            </div>
+            <div class="col">
+              <button class="btn btn-primary">Tìm Kiếm</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col list-button">
+        <div class="nav_button">
+          <nav aria-label="...">
+              <ul class="pagination pagination-sm">
+                <li class="page-item active" aria-current="page">
+                  <span class="page-link">1</span>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+              </ul>
+          </nav>
+      </div>
+      </div>
+    </div>  
+  </div>
+
+  <div class="dashboard-body chodathang">
+    <h1>Thống kê đơn khách đã thêm vào giỏ hàng</h1>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">Ngày Đặt</th>
+          <th scope="col">Khách Hàng</th>
+          <th scope="col">Địa Chỉ</th>
+          <th scope="col">Số Điện Thoại</th>
+          <th scope="col">Tên Sản Phẩm</th>
+          <th scope="col">Số Lượng</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">10/09/2021</th>
+          <td>Lê BV</td>
+          <td>Đại Mỗ, Hà Nội</td>
+          <td>0423784238</td>
+          <td>Máy Tính Macbook M1</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <th scope="row">10/09/2021</th>
+          <td>Lê BV</td>
+          <td>Đại Mỗ, Hà Nội</td>
+          <td>0423784238</td>
+          <td>Máy Tính Macbook M1</td>
+          <td>10</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="row align-center">
+      <div class="col-8 timkiem">
+        <form action="#">        
+          <div class="row">
+            <div class="col-8">
+              <input type="text" class="form-control" id="timkiem" placeholder="Tìm Kiếm" required>
+            </div>
+            <div class="col">
+              <button class="btn btn-primary">Tìm Kiếm</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col list-button">
+        <div class="nav_button">
+          <nav aria-label="...">
+              <ul class="pagination pagination-sm">
+                <li class="page-item active" aria-current="page">
+                  <span class="page-link">1</span>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+              </ul>
+          </nav>
+      </div>
+      </div>
+    </div> 
+  </div>
+
+  <div class="dashboard-body themdonhang">
+    <form action="#" method="post">
+      <h1>thông tin đặt hàng</h1>
+    <div class="row">
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Người Nhận..." required>
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Địa Chỉ..." required>
+      </div>
+      <div class="col">
+        <input type="number" class="form-control" placeholder="Số Điện Thoại..." required>
+      </div>
+    </div>
+    <h1>Thông tin đơn hàng</h1>
+    <div class="row">
+      <div class="col">
+        <input type="date" class="form-control" placeholder="Ngày Đặ..." required>
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Tên Sản Phẩm..." required>
+      </div>
+      <div class="col">
+        <input type="number" class="form-control" placeholder="Số Lượng..." required>
+      </div>
+    </div>
+    <h1>Ghi chú</h1>
+    <div class="row">
+      <div class="col">
+        <textarea type="number" class="form-control" required></textarea>
+      </div>
+    </div>
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <button class="btn btn-primary btn-chantrang" type="submit">Thêm Đơn Hàng</button>
+    </div>
+    </form>
+  </div>
+</div>
+<!-- end Quản lý đơn hàng -->
+
+<!-- Chỉnh sửa trang chủ -->
+<div class="body edit-home-page">
+  <div class="tab-handle">
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <span class="nav-link sale-sap-san active active-default">Sale Sập Sàn</span>
+      </li>
+      <li class="nav-item">
+        <span class="nav-link sp-timkiem-nhieu">SP tìm kiếm nhiều</span>
+      </li>
+      <li class="nav-item">
+        <span class="nav-link sp-dang-hot">SP đang hót</span>
+      </li>
+      <li class="nav-item">
+        <span class="nav-link poster-qc">Poster Quảng Cáo</span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="dashboard-body sale active active-default">
+    <h1>Sản phẩm hiển thị trên tab sale</h1>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">STT</th>
+          <th scope="col">Tên Sản Phẩm</th>
+          <th scope="col">Giá</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Smart tivi sam sung 4k 50 inch</td>
+          <td>16,690,000</td>
+          <td>
+            <button class="btn btn-primary done">Chỉnh Sửa</button>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Máy giặt siêu cấp dùng cho người lười</td>
+          <td>300.000.000.000</td>
+          <td>
+            <button class="btn btn-primary done">Chỉnh Sửa</button>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Máy rửa bát siêu sạch âm tường</td>
+          <td>1000</td>
+          <td>
+            <button class="btn btn-primary done">Chỉnh Sửa</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="dashboard-body search">
+    <h1>Sản Phẩm Được Tìm Kiếm Nhiều</h1>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">STT</th>
+          <th scope="col">Tên Sản Phẩm</th>
+          <th scope="col">Giá</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Smart tivi sam sung 4k 50 inch</td>
+          <td>16,690,000</td>
+          <td>
+            <button class="btn btn-primary done">Chỉnh Sửa</button>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Máy giặt siêu cấp dùng cho người lười</td>
+          <td>300.000.000.000</td>
+          <td>
+            <button class="btn btn-primary done">Chỉnh Sửa</button>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Máy rửa bát siêu sạch âm tường</td>
+          <td>1000</td>
+          <td>
+            <button class="btn btn-primary done">Chỉnh Sửa</button>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Máy giặt siêu cấp dùng cho người lười</td>
+          <td>300.000.000.000</td>
+          <td>
+            <button class="btn btn-primary done">Chỉnh Sửa</button>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Máy giặt siêu cấp dùng cho người lười</td>
+          <td>300.000.000.000</td>
+          <td>
+            <button class="btn btn-primary done">Chỉnh Sửa</button>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Máy giặt siêu cấp dùng cho người lười</td>
+          <td>300.000.000.000</td>
+          <td>
+            <button class="btn btn-primary done">Chỉnh Sửa</button>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Máy giặt siêu cấp dùng cho người lười</td>
+          <td>300.000.000.000</td>
+          <td>
+            <button class="btn btn-primary done">Chỉnh Sửa</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="dashboard-body sp-hot">
+    <h1>Sản Phẩm Hót</h1>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">STT</th>
+          <th scope="col">Tên Sản Phẩm</th>
+          <th scope="col">Giá</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Smart tivi sam sung 4k 50 inch</td>
+          <td>16,690,000</td>
+          <td>
+            <button class="btn btn-primary done">Chỉnh Sửa</button>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Máy giặt siêu cấp dùng cho người lười</td>
+          <td>300.000.000.000</td>
+          <td>
+            <button class="btn btn-primary done">Chỉnh Sửa</button>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Máy rửa bát siêu sạch âm tường</td>
+          <td>1000</td>
+          <td>
+            <button class="btn btn-primary done">Chỉnh Sửa</button>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Máy giặt siêu cấp dùng cho người lười</td>
+          <td>300.000.000.000</td>
+          <td>
+            <button class="btn btn-primary done">Chỉnh Sửa</button>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Máy giặt siêu cấp dùng cho người lười</td>
+          <td>300.000.000.000</td>
+          <td>
+            <button class="btn btn-primary done">Chỉnh Sửa</button>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Máy giặt siêu cấp dùng cho người lười</td>
+          <td>300.000.000.000</td>
+          <td>
+            <button class="btn btn-primary done">Chỉnh Sửa</button>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Máy giặt siêu cấp dùng cho người lười</td>
+          <td>300.000.000.000</td>
+          <td>
+            <button class="btn btn-primary done">Chỉnh Sửa</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="col list-button">
+      <div class="nav_button">
+        <nav aria-label="...">
+          <ul class="pagination pagination-sm">
+            <li class="page-item active" aria-current="page">
+              <span class="page-link">1</span>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <div class="dashboard-body poster-qc">
+    <h1>Quản Lý Poster trên trang chủ</h1>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">Vị Trí</th>
+          <th colspan="4">Các Ảnh</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">banner slider</th>
+          <td>
+            <a href="https://hc.com.vn/i/ecommerce/media/1989411_BANNER_DESKTOP_IMAGE_1_90821.jpg">IMG</a>
+          </td>
+          <td>
+            <a href="https://hc.com.vn/i/ecommerce/media/1989357_BANNER_DESKTOP_IMAGE_1_90858.jpg">IMG</a>
+          </td>
+          <td>
+            <a href="https://hc.com.vn/i/ecommerce/media/1997629_BANNER_DESKTOP_IMAGE_1_90059.jpg">IMG</a>
+          </td>
+          <td>
+            <a href="https://hc.com.vn/i/ecommerce/media/1989357_BANNER_DESKTOP_IMAGE_1_90858.jpg">IMG</a>
+          </td>
+          <td>
+            <button class="btn btn-primary done">Chỉnh Sửa</button>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">Banner sale</th>
+          <td>
+            <a href="./image/1992236_BANNER_DESKTOP_IMAGE_1_89765.jpg">IMG 1</a>
+          </td>
+          <td>
+            <a href="./image/1992236_BANNER_DESKTOP_IMAGE_1_89765.jpg">IMG 2</a>
+          </td>
+          <td>
+            <a href="./image/1992236_BANNER_DESKTOP_IMAGE_1_89765.jpg">IMG 3</a>
+          </td>
+          <td>
+            <a href="./image/1992236_BANNER_DESKTOP_IMAGE_1_89765.jpg">IMG 4</a>
+          </td>
+          <td>
+            <button class="btn btn-primary done">Chỉnh Sửa</button>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">Banner sale cấp 2</th>
+          <td>
+            <a href="./image/1992236_BANNER_DESKTOP_IMAGE_1_89765.jpg">IMG 1</a>
+          </td>
+          <td>
+            <a href="./image/1992261_BANNER_DESKTOP_IMAGE_1_90652.jpg">IMG 2</a>
+          </td>
+          <td>          </td>
+          <td>          </td>
+          <td>
+            <button class="btn btn-primary done">Chỉnh Sửa</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<!-- end Chinh sua trang chu -->
+
+<!-- Quản lý tuyển dụng -->
+<div class="body quan-ly-tuyen-dung">
+  <div class="tab-handle">
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <span class="nav-link dang-tuyen active active-default">Đang tuyển</span>
+      </li>
+      <li class="nav-item">
+        <span class="nav-link them-tuyen-dung">Thêm tuyển dụng</span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="dashboard-body dang-tuyen active active-default">
+    <h1>Tuyển Dụng</h1>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">STT</th>
+          <th scope="col">Title</th>
+          <th scope="col">Mức Lương</th>
+          <th scope="col">Số Lượng</th>
+          <th scope="col">Time</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>QUẢN LÝ NGÀNH HÀNG ĐIỆN LẠNH - GIA DỤNG, ĐIỆN TỬ - ITM</td>
+          <td>12-15</td>
+          <td>2</td>
+          <td>31/08/2021</td>
+          <td>
+            <button class="btn btn-primary done">Xoá</button>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">1</th>
+          <td>GIÁM ĐỐC CHI NHÁNH SÀI ĐỒNG - LONG BIÊN</td>
+          <td>Thoả Thuận</td>
+          <td>1</td>
+          <td>31/08/2021</td>
+          <td>
+            <button class="btn btn-primary done">Xoá</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="col list-button">
+      <div class="nav_button">
+        <nav aria-label="...">
+          <ul class="pagination pagination-sm">
+            <li class="page-item active" aria-current="page">
+              <span class="page-link">1</span>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <div class="dashboard-body them-tuyen-dung">
+    <h1>Thêm thông tin tuyển dụng</h1>
+    <form action="#" method="post">
+      <div class="row">
+        <div class="col-12">
+          <label for="title" class="form-label">Tiêu Đề</label>
+          <input type="text" class="form-control" id="title" required>
+        </div>
+        <div class="col-12">
+          <label for="vitri" class="form-label">Vị Trí</label>
+          <input type="text" class="form-control" id="vitri" required>
+        </div>
+        <div class="col-6">
+          <label for="mucluong" class="form-label">Mức Lương</label>
+          <input type="text" class="form-control" id="mucluong" required>
+        </div>
+        <div class="col-6">
+          <label for="soluongtuyen" class="form-label">Số Lượng</label>
+          <input type="number" class="form-control" id="soluongtuyen" required>
+        </div>
+        <div class="col-6">
+          <label for="ngaydangtuyen" class="form-label">Ngày Đăng Tuyển</label>
+          <input type="date" class="form-control" id="ngaydangtuyen" required>
+        </div>
+        <div class="col-6">
+          <label for="thoigiannophs" class="form-label">Thời gian nộp hồ sơ</label>
+          <input type="date" class="form-control" id="thoigiannophs" required>
+        </div>
+      </div>
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-primary btn-chantrang" type="submit">Nhập kho sản phẩm</button>
+      </div>
+    </form>
+  </div>
+</div>
+<!-- end quản lý tuyển dụng -->
+

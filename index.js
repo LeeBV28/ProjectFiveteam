@@ -32,6 +32,11 @@ app.get('/list-supermarket',function(req,res) {
     res.render('find_sieuthi')
 });
 
+app.get('/admin',function(req,res) {
+    res.render('admin')
+})
 
-
-
+app.get('/loadbody', function(req,res) {
+    var name = req.query.name;
+    res.send(name)
+});
