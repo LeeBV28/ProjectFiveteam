@@ -603,7 +603,7 @@
     .product-content__sub {
         border-left: none;
         position: fixed;
-        /*flex-direction: column;*/
+
         background-color: white;
         min-width: 50%;
         width: unset;
