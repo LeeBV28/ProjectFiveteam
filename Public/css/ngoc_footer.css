@@ -1,18 +1,26 @@
 .footer__contain {
     background-color: #dddddd;
     display: flex;
-    padding-left: 32px;
-    padding-top: 16px;
+
+    padding: 16px 20px 8px 32px;
+    flex-wrap: wrap;
 }
 
 .footer__content {
     margin: 0 8px;
-    flex: 1;
+    /*flex: 1;*/
     padding: 8px;
 }
 
-.footer__information-content-title {
+.footer__content:last-child{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
+.footer__link-element {
+    margin-top: 12px;
 }
 
 .footer__information-content-title img {
@@ -30,7 +38,7 @@
 }
 
 .footer__title-heading {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .footer__links-list {
@@ -47,7 +55,7 @@
 }
 
 .footer__certification {
-    flex: 1;
+    /*flex: 1;*/
     display: flex;
     justify-content: center;
 }
