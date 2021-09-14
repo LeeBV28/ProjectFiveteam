@@ -4,8 +4,13 @@
     <%-include("head_tuyendung")%>
     <title>Tuyển Dụng</title>
 
+
 </head>
     <body>
+    <header class="header">
+        <%-include("ngoc_header")%>
+    </header>
+    <section>
     <div class="main-container container">
         <div class="wrap-td clearfix">
             <h2 class="title-result-find">Tuyển dụng</h2>
@@ -234,11 +239,15 @@
                 <div class="pagination">
                     <span class="pages">Trang 1 / 2 </span>
                     <span class="current">1</span>
-                    <a id="PAGE_2" data-pageid="2" href="/tuyendung2" onclick="return true;" class="page" title="2"> 2</a>
+                    <a id="PAGE_2" data-pageid="2" href="/tuyen-dung-2" onclick="return true;" class="page" title="2"> 2</a>
                 </div>
 
             </div>
         </div>
     </div>
-</body>
+    </section>
+    <footer class="footer">
+        <%-include("ngoc_footer")-%>
+    </footer>
+    </body>
 </html>

@@ -5,6 +5,10 @@
     <title>Chi Tiết</title>
 </head>
 <body>
+<header class="header">
+    <%-include("ngoc_header")%>
+</header>
+<section>
    <div class="main-container container">
        <ul class="breadcrumb">
            <li><a id="MENU_HOME" href="/home"><i class="fa fa-home"></i></a></li>
@@ -43,7 +47,7 @@
                        </div>
                        <div class="content-product-right col-md-5 ">
                            <div class="title-product">
-                               <h3>Smart Tivi Panasonic 49 inch TH-49ES500V</h3>
+                               <h5>Smart Tivi Panasonic 49 inch TH-49ES500V</h5>
                            </div>
                            <div class="product-label form-group">
                                <div class="product_page_price price">
@@ -72,9 +76,112 @@
                                        <input type="button" data-toggle="tooltip" title="" value="Mua hàng" data-loading-text="Loading..." id="ADD_TO_CART_00026922" data-itemid="28722" class="btn btn-mega btn-lg" onclick="return false;" data-original-title="Thêm vào giỏ hàng">
                                    </div>
                            <!-- end box info product -->
-                                   <div class="hc_btn_xem_sieuthi" data-toggle="modal" data-target=".hc_show_sieuthi">
-                               <a href="" onclick="return false;" class="hc_txt">XEM SIÊU THỊ CÓ HÀNG TRƯNG BÀY</a>
-                           </div>
+                                   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                       <i class="fas fa-map-marker-alt"></i>
+                                  SIÊU THỊ CÓ HÀNG TRƯNG BÀY
+                                   </button>
+
+                                   <!-- Modal -->
+                                   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                       <div class="modal-dialog" role="document">
+                                           <div class="modal-content">
+                                               <div class="modal-header">
+                                                   <h5 class="modal-title" id="exampleModalLabel">SIÊU THỊ CÓ HÀNG TRƯNG BÀY</h5>
+                                                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                       <span aria-hidden="true">&times;</span>
+                                                   </button>
+                                               </div>
+                                               <div class="modal-body">
+                                                   <ul>
+                                                       <li>
+                                                           <div class="hc-input-single hc_payment_item hc_payment_1">
+                                                               <input type="radio" name="payment" id="diachi_1">
+                                                               <label class="" for="diachi_1">HC Đông Hà – Quảng Trị,
+                                                                   Số 1 Phan Bội Châu, Phường 1, TP Đông Hà, Tỉnh Quảng Trị<span class="hc_status_1"><i></i>Còn hàng</span></label>
+                                                           </div>
+                                                       </li>
+                                                       <li>
+                                                           <div class="hc-input-single hc_payment_item hc_payment_1">
+                                                               <input type="radio" name="payment" id="diachi_1">
+                                                               <label class="" for="diachi_1">HC Đồng Hới – Quảng Bình,
+                                                                   Số 50 Quang Trung, Phường Đồng Hải, Thành Phố Đồng Hới, Tỉnh Quảng Bình<span class="hc_status_1"><i></i>Còn hàng</span></label>
+                                                           </div>
+                                                       </li>
+                                                       <li>
+                                                           <div class="hc-input-single hc_payment_item hc_payment_1">
+                                                               <input type="radio" name="payment" id="diachi_1">
+                                                               <label class="" for="diachi_1">HC Lạng Sơn,
+                                                                   Số 69 Đường Ngô Quyền, Phường Vĩnh Trại, Thành Phố Lạng Sơn, Tỉnh Lạng Sơn<span class="hc_status_1"><i></i>Còn hàng</span></label>
+                                                           </div>
+                                                       </li>
+                                                       <li>
+                                                           <div class="hc-input-single hc_payment_item hc_payment_1">
+                                                               <input type="radio" name="payment" id="diachi_1">
+                                                               <label class="" for="diachi_1">HC Ninh Bình,
+                                                                   283 Trần Hưng Đạo, P Đông Thành, Tp Ninh Bình<span class="hc_status_1"><i></i>Còn hàng</span></label>
+                                                           </div>
+                                                       </li>
+                                                       <li>
+                                                           <div class="hc-input-single hc_payment_item hc_payment_1">
+                                                               <input type="radio" name="payment" id="diachi_1">
+                                                               <label class="" for="diachi_1">HC Quảng Ninh,
+                                                                   Số 490, đường Nguyễn Văn Cừ, P. Hồng Hà, TP. Hạ Long, tỉnh Quảng Ninh<span class="hc_status_1"><i></i>Còn hàng</span></label>
+                                                           </div>
+                                                       </li>
+                                                       <li>
+                                                           <div class="hc-input-single hc_payment_item hc_payment_1">
+                                                               <input type="radio" name="payment" id="diachi_1">
+                                                               <label class="" for="diachi_1">HC Tam Trinh,
+                                                                   411 đường Tam Trinh, Hoàng Mai, Hà Nội<span class="hc_status_1"><i></i>Còn hàng</span></label>
+                                                           </div>
+                                                       </li>
+                                                       <li>
+                                                           <div class="hc-input-single hc_payment_item hc_payment_1">
+                                                               <input type="radio" name="payment" id="diachi_1">
+                                                               <label class="" for="diachi_1">HC Thái Bình,
+                                                                   Số 297 đường Lý Bôn, Phường Tiền Phong, TP Thái Bình, tỉnh Thái Bình<span class="hc_status_1"><i></i>Còn hàng</span></label>
+                                                           </div>
+                                                       </li>
+                                                       <li>
+                                                           <div class="hc-input-single hc_payment_item hc_payment_1">
+                                                               <input type="radio" name="payment" id="diachi_1">
+                                                               <label class="" for="diachi_1">HC Thái Thịnh,
+                                                                   102 Thái Thịnh, Đống Đa, Hà Nội<span class="hc_status_1"><i></i>Còn hàng</span></label>
+                                                           </div>
+                                                       </li>
+                                                       <li>
+                                                           <div class="hc-input-single hc_payment_item hc_payment_1">
+                                                               <input type="radio" name="payment" id="diachi_1">
+                                                               <label class="" for="diachi_1">HC Thanh Hóa,
+                                                                   Số 88, Đại Lộ Lê Lợi, KĐT mới Đông Hương, P. Đông Hương, TP Thanh Hóa, Tỉnh Thanh Hóa<span class="hc_status_1"><i></i>Còn hàng</span></label>
+                                                           </div>
+                                                       </li>
+                                                       <li>
+                                                           <div class="hc-input-single hc_payment_item hc_payment_1">
+                                                               <input type="radio" name="payment" id="diachi_1">
+                                                               <label class="" for="diachi_1">HC Vạn Phúc Hà Nội,
+                                                                   Vạn Phúc Hà Đông Hà Nội<span class="hc_status_1"><i></i>Còn hàng</span></label>
+                                                           </div>
+                                                       </li>
+                                                       <li>
+                                                           <div class="hc-input-single hc_payment_item hc_payment_1">
+                                                               <input type="radio" name="payment" id="diachi_1">
+                                                               <label class="" for="diachi_1">HC Vĩnh Yên,
+                                                                   TTTM Hà Tiên, Khu Đô Thị Chùa Hà Tiên, Phường Liên Bảo, TP Vĩnh Yên, Tỉnh Vĩnh Phúc<span class="hc_status_1"><i></i>Còn hàng</span></label>
+                                                           </div>
+                                                       </li>
+                                                       <li>
+                                                           <div class="hc-input-single hc_payment_item hc_payment_1">
+                                                               <input type="radio" name="payment" id="diachi_1">
+                                                               <label class="" for="diachi_1">HC Yên Định Thanh Hóa,
+                                                                   Yên Định Thanh Hóa<span class="hc_status_1"><i></i>Còn hàng</span></label>
+                                                           </div>
+                                                       </li>
+                                                   </ul>
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
                        </div>
                    </div>
                </div>
@@ -195,13 +302,17 @@
                                    </div>
                                </div>
                            </div>
+                   <div class="hc_box_btn-viewmore">
+                       <p class="text-center" style="padding:10px"><i>Lưu ý : Hình ảnh và thông số chỉ mang tính chất tham khảo, có thể bị thay đổi từ nhà sản xuất mà không báo trước. Quý khách vui lòng kiểm tra kỹ sản phẩm trước khi nhận hàng.</i></p>
+                       <span class="hc_btn-viewmore">Xem thêm</span>
+                   </div>
                        </div>
                <div class="seciton-comment">
                    <div class="modtitle">
                        <span>Bình luận</span>
                    </div>
                    <div class="comment-box">
-                       <h4 class="text-uppercase">Gửi Bình luận</h4>
+                       <p class="text-uppercase">Gửi Bình luận</p>
                        <div class="form-comment-wrap no-border-textarea">
                            <div class="row">
                                <div class="col-sm-6">
@@ -222,117 +333,13 @@
                        </div>
                    </div>
                </div>
-               <div class="modal fade hc_show_sieuthi" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                   <div class="modal-dialog modal-lg">
-                       <div class="modal-content">
-                           <div class="modal-header">
-                               <h4 class="modal-title" id="myLargeModalLabel">SIÊU THỊ CÓ HÀNG TRƯNG BÀY</h4>
-                               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                   <span aria-hidden="true">×</span>
-                               </button>
-                           </div>
-                           <div class="modal-body">
-                               <div class="row">
-                                   <div class="row">
-                                       <div class="col-lg-11 col-xs-11 col-xs-push-1 col-lg-push-1">
-                                           <div class="mCustomScrollbar hc_list_scroll hc_list_sieuthi _mCS_1 mCS_no_scrollbar" id="" data-mcs-theme="dark"><div id="mCSB_1" class="mCustomScrollBox mCS-dark mCSB_vertical mCSB_inside" style="max-height: 0px;" tabindex="0"><div id="mCSB_1_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
-                                                       <ul>
-                                                           <li>
-                                                               <div class="hc-input-single hc_payment_item hc_payment_1">
-                                                                   <input type="radio" name="payment" id="diachi_1">
-                                                                   <label class="" for="diachi_1">HC Đông Hà – Quảng Trị,
-                                                                       Số 1 Phan Bội Châu, Phường 1, TP Đông Hà, Tỉnh Quảng Trị<span class="hc_status_1"><i></i>Còn hàng</span></label>
-                                                               </div>
-                                                           </li>
-                                                           <li>
-                                                               <div class="hc-input-single hc_payment_item hc_payment_1">
-                                                                   <input type="radio" name="payment" id="diachi_1">
-                                                                   <label class="" for="diachi_1">HC Đồng Hới – Quảng Bình,
-                                                                       Số 50 Quang Trung, Phường Đồng Hải, Thành Phố Đồng Hới, Tỉnh Quảng Bình<span class="hc_status_1"><i></i>Còn hàng</span></label>
-                                                               </div>
-                                                           </li>
-                                                           <li>
-                                                               <div class="hc-input-single hc_payment_item hc_payment_1">
-                                                                   <input type="radio" name="payment" id="diachi_1">
-                                                                   <label class="" for="diachi_1">HC Lạng Sơn,
-                                                                       Số 69 Đường Ngô Quyền, Phường Vĩnh Trại, Thành Phố Lạng Sơn, Tỉnh Lạng Sơn<span class="hc_status_1"><i></i>Còn hàng</span></label>
-                                                               </div>
-                                                           </li>
-                                                           <li>
-                                                               <div class="hc-input-single hc_payment_item hc_payment_1">
-                                                                   <input type="radio" name="payment" id="diachi_1">
-                                                                   <label class="" for="diachi_1">HC Ninh Bình,
-                                                                       283 Trần Hưng Đạo, P Đông Thành, Tp Ninh Bình<span class="hc_status_1"><i></i>Còn hàng</span></label>
-                                                               </div>
-                                                           </li>
-                                                           <li>
-                                                               <div class="hc-input-single hc_payment_item hc_payment_1">
-                                                                   <input type="radio" name="payment" id="diachi_1">
-                                                                   <label class="" for="diachi_1">HC Quảng Ninh,
-                                                                       Số 490, đường Nguyễn Văn Cừ, P. Hồng Hà, TP. Hạ Long, tỉnh Quảng Ninh<span class="hc_status_1"><i></i>Còn hàng</span></label>
-                                                               </div>
-                                                           </li>
-                                                           <li>
-                                                               <div class="hc-input-single hc_payment_item hc_payment_1">
-                                                                   <input type="radio" name="payment" id="diachi_1">
-                                                                   <label class="" for="diachi_1">HC Tam Trinh,
-                                                                       411 đường Tam Trinh, Hoàng Mai, Hà Nội<span class="hc_status_1"><i></i>Còn hàng</span></label>
-                                                               </div>
-                                                           </li>
-                                                           <li>
-                                                               <div class="hc-input-single hc_payment_item hc_payment_1">
-                                                                   <input type="radio" name="payment" id="diachi_1">
-                                                                   <label class="" for="diachi_1">HC Thái Bình,
-                                                                       Số 297 đường Lý Bôn, Phường Tiền Phong, TP Thái Bình, tỉnh Thái Bình<span class="hc_status_1"><i></i>Còn hàng</span></label>
-                                                               </div>
-                                                           </li>
-                                                           <li>
-                                                               <div class="hc-input-single hc_payment_item hc_payment_1">
-                                                                   <input type="radio" name="payment" id="diachi_1">
-                                                                   <label class="" for="diachi_1">HC Thái Thịnh,
-                                                                       102 Thái Thịnh, Đống Đa, Hà Nội<span class="hc_status_1"><i></i>Còn hàng</span></label>
-                                                               </div>
-                                                           </li>
-                                                           <li>
-                                                               <div class="hc-input-single hc_payment_item hc_payment_1">
-                                                                   <input type="radio" name="payment" id="diachi_1">
-                                                                   <label class="" for="diachi_1">HC Thanh Hóa,
-                                                                       Số 88, Đại Lộ Lê Lợi, KĐT mới Đông Hương, P. Đông Hương, TP Thanh Hóa, Tỉnh Thanh Hóa<span class="hc_status_1"><i></i>Còn hàng</span></label>
-                                                               </div>
-                                                           </li>
-                                                           <li>
-                                                               <div class="hc-input-single hc_payment_item hc_payment_1">
-                                                                   <input type="radio" name="payment" id="diachi_1">
-                                                                   <label class="" for="diachi_1">HC Vạn Phúc Hà Nội,
-                                                                       Vạn Phúc Hà Đông Hà Nội<span class="hc_status_1"><i></i>Còn hàng</span></label>
-                                                               </div>
-                                                           </li>
-                                                           <li>
-                                                               <div class="hc-input-single hc_payment_item hc_payment_1">
-                                                                   <input type="radio" name="payment" id="diachi_1">
-                                                                   <label class="" for="diachi_1">HC Vĩnh Yên,
-                                                                       TTTM Hà Tiên, Khu Đô Thị Chùa Hà Tiên, Phường Liên Bảo, TP Vĩnh Yên, Tỉnh Vĩnh Phúc<span class="hc_status_1"><i></i>Còn hàng</span></label>
-                                                               </div>
-                                                           </li>
-                                                           <li>
-                                                               <div class="hc-input-single hc_payment_item hc_payment_1">
-                                                                   <input type="radio" name="payment" id="diachi_1">
-                                                                   <label class="" for="diachi_1">HC Yên Định Thanh Hóa,
-                                                                       Yên Định Thanh Hóa<span class="hc_status_1"><i></i>Còn hàng</span></label>
-                                                               </div>
-                                                           </li>
-                                                       </ul>
-                                           </div>
-                                       </div>
-                                   </div>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-           </div>
+          </div>
        </div>
    </div>
+</section>
+<footer class="footer">
+    <%-include("ngoc_footer")-%>
+</footer>
    <script type="text/javascript">
        let thumbnails = document.getElementsByClassName('thumbnail')
 
@@ -396,5 +403,9 @@
                });
 
            </script>
+
+           <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
