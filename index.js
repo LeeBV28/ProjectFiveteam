@@ -72,7 +72,7 @@ app.get('/cv10',function(req,res){
     res.render('cv10');
 });
 app.get('/chitietsp',function(req,res){
-    res.render('chitiettv');
+    res.render('chitiet_ngoc');
 });
 
 app.get('/loadbody', function(req,res) {
