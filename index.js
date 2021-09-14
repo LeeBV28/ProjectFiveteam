@@ -35,6 +35,45 @@ app.get('/list-supermarket',function(req,res) {
 app.get('/admin',function(req,res) {
     res.render('admin')
 })
+app.get('/tuyen-dung',function(req,res){
+    res.render('tuyendung');
+});
+app.get('/tuyen-dung-2',function(req,res){
+    res.render('tuyendung2');
+});
+app.get('/cv1',function(req,res){
+    res.render('cv1');
+});
+app.get('/cv2',function(req,res){
+    res.render('cv2');
+});
+app.get('/cv3',function(req,res){
+    res.render('cv3');
+});
+app.get('/cv4',function(req,res){
+    res.render('cv4');
+});
+app.get('/cv5',function(req,res){
+    res.render('cv5');
+});
+app.get('/cv6',function(req,res){
+    res.render('cv6');
+});
+app.get('/cv7',function(req,res){
+    res.render('cv7');
+});
+app.get('/cv8',function(req,res){
+    res.render('cv8');
+});
+app.get('/cv9',function(req,res){
+    res.render('cv9');
+});
+app.get('/cv10',function(req,res){
+    res.render('cv10');
+});
+app.get('/chitietsp',function(req,res){
+    res.render('chitiettv');
+});
 
 app.get('/loadbody', function(req,res) {
     var name = req.query.name;

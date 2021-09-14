@@ -6,6 +6,10 @@
 
 </head>
 <body>
+<header class="header">
+    <%-include("ngoc_header")%>
+</header>
+<section>
 <div class="main-container container">
     <div class="wrap-td clearfix">
         <h2 class="title-result-find">Tuyển dụng</h2>
@@ -233,12 +237,16 @@
             </div>
             <div class="pagination">
                 <span class="pages">Trang 2 / 2</span>
-                <a id="PAGE_1" data-pageid="1" href="/tuyendung" onclick="return true;" class="page" title="1"> 1</a>
+                <a id="PAGE_1" data-pageid="1" href="/tuyen-dung" onclick="return true;" class="page" title="1"> 1</a>
                 <span class="current">2</span>
             </div>
 
         </div>
     </div>
 </div>
+</section>
+<footer class="footer">
+    <%-include("ngoc_footer")-%>
+</footer>
 </body>
 </html>
