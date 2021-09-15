@@ -1,0 +1,202 @@
+.list-product-detail {
+    display: none;
+}
+.header__list-product:hover .list-product-detail {
+    display: flex;
+}
+body {
+    font-weight: 500;
+}
+.main {
+    background-color: #f0f0f0;
+}
+.container {
+    padding-top: 10px;
+    max-width: 680px;    
+}
+.title-dau-trang {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section {
+    padding: 0;
+    background-color: white;
+    box-shadow: 0px 0px 14px 0px #dbd9d9;
+}
+.section .sanpham {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 25px;
+}
+.section .sanpham:not(:first-child) {
+    border-top:1px solid ;
+}
+.left {
+    display: flex;
+    align-items: start;
+    margin-right: 15px;
+}
+.left img {
+    max-width: 80px;
+}
+p.xoa {
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    color: gray;
+    cursor: pointer;
+}
+.ten h1 {
+    font-size: 20px;
+    margin: 0;
+}
+.right {
+    margin-left: 15px;
+    display: block;
+}
+.right p {
+    margin: 0;
+    text-align: right;
+}
+.gia {
+    color: red;
+    margin-bottom: 5px;
+}
+.soluong {
+    border: 1px solid;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.soluong p {
+    margin: 0;
+    padding: 5px 11px;
+}
+p.nut {
+    color: blue;
+    cursor: pointer;
+}
+.tru.nut i {
+    width: 12px;
+    height: 4px;
+    border-radius: 2px;
+    color: blue;
+    background-color: blue;
+    display: block;
+}
+p.number {
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+
+.sum {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 25px;
+}
+.sum p {
+    margin: 0;
+}
+
+.thanhtoan {
+    border-top: 1px solid;
+    padding: 10px 25px;
+}
+.thong-tin p {
+    margin-bottom: 5px;
+}
+.thong-tin h1 {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.thong-tin .dia-chi {
+    margin-top: 20px;
+}
+.check-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.check-box input {
+    margin-right: 5px;
+}
+.check-box label {
+    margin-right: 30px;
+}
+input#giaotannha:checked ~ .ship {
+    display: block;
+}
+input#nhantaisieuthi:checked ~ .nhan-tai-sieu-thi {
+    display: block;
+}
+.sub-checkbox {
+    position: relative;
+    display: none;
+    flex-basis: 100%;
+    background-color: #f6f6f6;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #e1e1e1;
+}
+.sub-checkbox .chilen {
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+}
+.sub-checkbox .chilen i {
+    color: #f6f6f6;
+    border-top: 1px solid #e1e1e1;
+    border-left: 1px solid #e1e1e1;
+    transform: rotate(45deg);
+}
+.ship .chilen {
+    left: 50px;
+}
+.nhan-tai-sieu-thi .chilen {
+    left: 175px;
+}
+.sub-checkbox h3 {
+    font-size: 18px;
+}
+.sub-checkbox p {
+    margin-bottom: 5px;
+    padding-left: 8px;
+}
+.sub-checkbox .row {
+    padding: 10px 0;
+}
+.thong-tin .yeucaukhac {
+    margin-top: 10px;
+}
+
+.nut-mua-hang {
+    padding: 5px 25px;
+    border-top: 1px solid;
+}
+.sum-tien {
+    display: flex;
+    justify-content: space-between;
+}
+.sum-tien p {
+    font-weight: 700;
+}
+.sum-tien span {
+    color: red;
+    font-weight: 700;
+}
+.d-grid.gap-2 {
+    margin-bottom: 15px;
+}
+
+p.chantrang {
+    padding: 15px 0;
+    margin: 0;
+    text-align: center;
+    color: gray;
+    font-weight: 400;
+}

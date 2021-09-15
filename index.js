@@ -34,7 +34,12 @@ app.get('/list-supermarket',function(req,res) {
 
 app.get('/admin',function(req,res) {
     res.render('admin')
-})
+});
+
+app.get('/giohang', function(req,res) {
+    res.render('giohang')
+});
+
 app.get('/tuyen-dung',function(req,res){
     res.render('tuyendung');
 });

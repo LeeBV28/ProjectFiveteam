@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%-include("head")%>
+    <title>Giỏ Hàng</title>
+    <%-include("ngoc_head")%>
+    <link rel="stylesheet" href="./css/giohang.css">
+    <!-- icon -->
+    <script src="https://kit.fontawesome.com/7fbca7d9d5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <%-include("ngoc_header")%>
+        <!--    modal form account login-->
+        <%-include("modal_form_login")%>
+    </header>
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="title-dau-trang">
+                    <p>
+                        <a href="/">
+                            <i class="fas fa-backward"></i>
+                            Mua thêm sản phẩm
+                        </a>
+                    </p>
+                    <p>Giỏ hàng của bạn</p>
+                </div>
+                <form class="section">
+                    <div class="sanpham">
+                        <div class="left">
+                            <div class="anh">
+                                <img src="https://cdn.tgdd.vn/Products/Images/1944/223305/lg-th2111dsab-200x200.jpg" alt="maygiat">
+                                <p class="xoa">
+                                    <i class="fas fa-times-circle"></i>
+                                    Xoá
+                                </p>
+                            </div>
+                            <div class="ten">
+                                <h1>Máy Giặt LG Inverter 11kg TH2111DSAB</h1>
+                                <p>Thương hiệu: SamSung</p>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="gia">
+                                <p>20.000.000đ</p>
+                            </div>
+                            <div class="soluong">
+                                <p class="tru nut">
+                                    <i></i>
+                                </p>
+                                <p class="number">1</p>
+                                <p class="cong nut">
+                                    <i class="fas fa-plus"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sanpham">
+                        <div class="left">
+                            <div class="anh">
+                                <img src="https://cdn.tgdd.vn/Products/Images/1944/223305/lg-th2111dsab-200x200.jpg" alt="maygiat">
+                                <p class="xoa">
+                                    <i class="fas fa-times-circle"></i>
+                                    Xoá
+                                </p>
+                            </div>
+                            <div class="ten">
+                                <h1>Máy Giặt LG Inverter 11kg TH2111DSAB</h1>
+                                <p>Thương hiệu: SamSung</p>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="gia">
+                                <p>20.000.000đ</p>
+                            </div>
+                            <div class="soluong">
+                                <p class="tru nut">
+                                    <i></i>
+                                </p>
+                                <p class="number">1</p>
+                                <p class="cong nut">
+                                    <i class="fas fa-plus"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sum">
+                        <p class="tamtinh">
+                            Tạm tính (<span>Số</span> sản phẩm):
+                        </p>
+                        <p class="gia">
+                            <span>20.000.000đ</span>
+                        </p>
+                    </div>
+                    <div class="thanhtoan">
+                        <div class="thong-tin">
+                            <div class="tt-co-ban">
+                                <h1>Thông tin khách hàng:</h1>
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Tên bạn" required>
+                                    </div>
+                                    <div class="col">
+                                        <input type="number" class="form-control" placeholder="Số điện thoại" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dia-chi">
+                                <h1>Chọn cách nhận hàng:</h1>
+                                <div class="check-box">
+                                    <input class="form-check-input mt-0" id="giaotannha" type="checkbox" checked>
+                                    <label class="form-check-label" for="giaotannha">Giao tận nhà</label>
+                                    <input class="form-check-input mt-0" id="nhantaisieuthi" type="checkbox">
+                                    <label class="form-check-label" for="nhantaisieuthi">Nhận tại siêu thị</label>
+
+                                    <div class="sub-checkbox ship">
+                                        <h3>Địa chỉ nhận hàng</h3>
+                                        <div class="row">
+                                            <div class="col">
+                                                <input type="text" class="form-control" placeholder="Tỉnh / Thành Phố" required>
+                                            </div>
+                                            <div class="col">
+                                                <input type="text" class="form-control" placeholder="Quận / Huyện" required>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <input type="text" class="form-control" placeholder="Phường / Xã" required>
+                                            </div>
+                                            <div class="col">
+                                                <input type="text" class="form-control" placeholder="Số nhà, tên đường" required>
+                                            </div>
+                                        </div>
+                                        <div class="chilen">
+                                            <i class="fas fa-square-full"></i>
+                                        </div>
+                                    </div>
+                                    <div class="sub-checkbox nhan-tai-sieu-thi">
+                                        <h3>Vui lòng đến siêu thị tại</h3>
+                                        <p>Toà nhà Detech - ĐH FPT, Số 8, Tôn Thất Thuyết, Mỹ Đình, Từ Liêm, Hà Nội.</p>
+                                        <p>Liên hệ: 0973111086</p>
+                                        <p>Mail: aptech.fpt@fe.edu.vn</p>
+                                        <div class="chilen">
+                                            <i class="fas fa-square-full"></i>
+                                        </div>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <div class="yeucaukhac">
+                                <input type="text" class="form-control" placeholder="Yêu cầu khác (nếu có)">
+                            </div>
+                        </div>                      
+                    </div> 
+                    <div class="nut-mua-hang">
+                        <div class="sum-tien">
+                            <p>Tổng Tiền: </p>
+                            <span>40.000.000đ</span>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-primary" type="submit">Đặt Hàng</button>
+                          </div>
+                    </div>
+                </form> 
+                <p class="chantrang">Cảm ơn quý khách</p>              
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <%-include("ngoc_footer")%>
+    </footer>
+
+    <script src="./js/giohang.js"></script>
+</body>
+</html>
