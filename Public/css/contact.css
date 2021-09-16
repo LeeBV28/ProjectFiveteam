@@ -78,4 +78,11 @@ form.ho-tro .row {
     .chi-tiet {
         width: 100%;
     }
+    .col {
+        flex: 100%;
+        margin: 10px 0;
+    }
+    form.ho-tro .row {
+        margin: 0;
+    }
 }

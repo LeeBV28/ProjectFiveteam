@@ -209,3 +209,16 @@ p.chantrang {
     color: gray;
     font-weight: 400;
 }
+
+@media screen and (max-width: 350px) {
+    .section .sanpham {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .left {
+        flex-basis: 100%;
+    }
+    .right p {
+        text-align: center;
+    }
+}

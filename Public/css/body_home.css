@@ -59,10 +59,12 @@ img {
 .banner_right {
     margin: 0 -10px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 .banner_right div {
+    width: 25%;
     padding: 0 10px;
 }
 .spbanchay h1 {
@@ -110,4 +112,33 @@ img {
 }
 .sanphamhot_conten .show:hover .button_show {
     display: flex;
+}
+
+@media screen and (max-width: 1000px) {
+    .my-body-section .col-2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .slider .show:nth-child(even) {
+        display: none;
+    }
+    .show {
+        width: 33.3333%;
+    }
+    .banner_right div {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 450px) {
+    .show {
+        width: 50%;
+    }
+    .slider .show:nth-child(odd) {
+        display: none;
+    }
+    .slider .show:nth-child(even) {
+        display: flex;
+    }
 }

@@ -27,10 +27,13 @@ app.get('/',function(req,res) {
 app.get('/list-sp',function(req,res) {
     res.render('listsp')
 });
-// Danh sách siêu thị
-app.get('/list-supermarket',function(req,res) {
-    res.render('find_sieuthi')
+// Contact
+app.get('/thong-tin-lien-he',function(req,res) {
+    res.render('contact')
 });
+app.get('/san-pham-quan-tam',function(req, res) {
+    res.render('quan_tam')
+})
 
 app.get('/admin',function(req,res) {
     res.render('admin')
