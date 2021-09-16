@@ -9,7 +9,7 @@ densieuthi.onchange = function() {
     giaotannha.checked = false;
 }
 
-function checksoluong() {
+function checksoluong() { // check nếu số lượng nhiều hơn 1 sẽ giảm được số lượng sản phẩm. nếu bằng 1 không giảm được.
     var soluong = document.querySelectorAll('.soluong');
     for(var i = 0; i<soluong.length; i++) {
         var numberElement = soluong[i].children[1]

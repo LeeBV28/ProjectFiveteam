@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%-include("head")%>
+    <title>Thông Tin Liên Hệ</title>
+    <%-include("ngoc_head")%>
+    <link rel="stylesheet" href="./css/contact.css">
+    <!-- icon -->
+    <script src="https://kit.fontawesome.com/7fbca7d9d5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <%-include("ngoc_header")%>
+        <!--    modal form account login-->
+        <%-include("modal_form_login")%>
+    </header>
+
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <h1>Thông Tin Liện hệ</h1>
+                <div class="ban-do">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.096841491345!2d105.78049781411167!3d21.02881079315434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab4cd0c66f05%3A0xea31563511af2e54!2zOCBUw7RuIFRo4bqldCBUaHV54bq_dCwgTeG7uSDEkMOsbmgsIEPhuqd1IEdp4bqleSwgSMOgIE7hu5lpLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1631783112390!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>                
+            </div>
+        </div>
+        <div class="main info">
+            <div class="container">
+                <div class="row">
+                    <div class="thong-tin">
+                        <div class="chi-tiet">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h2>Vị Trí: Toà nhà Detech - ĐH FPT, Số 8, Tôn Thất Thuyết, Mỹ Đình, Từ Liêm, Hà Nội.</h2>
+                        </div>
+                        <div class="chi-tiet">
+                            <i class="fas fa-phone-alt"></i>
+                            <h2>Điện Thoại: (024) 7300 8855 <br/> 0973111086</h2>
+                        </div>
+                        <div class="chi-tiet">
+                            <i class="fas fa-envelope-open-text"></i>
+                            <h2>Email: aptech.fpt@fe.edu.vn <br/> hotro.he@gmail.com</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="container">
+                <div class="row">
+                    <form action="#" class="ho-tro">                        
+                        <h1>Yêu Cầu Hỗ trợ</h1>
+                        <p>( Miễn Phí )</p>
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Tên bạn" required>
+                            </div>
+                            <div class="col">
+                                <input type="number" class="form-control" placeholder="Số điện thoại" required>
+                            </div>
+                            <div class="col">
+                                <input type="email" class="form-control" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <textarea type="text" class="form-control" id="noi-dung" placeholder="Bạn cần hỗ trợ gì?" required></textarea>
+                            </div>
+                        </div>
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                            <button class="btn btn-primary" type="submit">Gửi Yêu Cầu</button>
+                          </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <%-include("ngoc_footer")%>
+    </footer>
+</body>
+</html>
