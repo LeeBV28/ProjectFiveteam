@@ -30,6 +30,9 @@ body {
     align-items: flex-start;
     padding: 10px 25px;
 }
+.sanpham h1 a {
+    color: black;
+}
 .section .sanpham:not(:first-child) {
     border-top:1px solid ;
 }
@@ -47,6 +50,12 @@ p.xoa {
     padding: 10px;
     color: gray;
     cursor: pointer;
+}
+p.xoa:hover {
+    color: blue;
+}
+p.xoa:active {
+    opacity: 0.8;
 }
 .ten h1 {
     font-size: 20px;

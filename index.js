@@ -37,9 +37,12 @@ app.get('/admin',function(req,res) {
 });
 
 app.get('/giohang', function(req,res) {
-    res.render('giohang')
+    res.render('giohang');
 });
 
+app.get('/sp-quan-tam', function(req, res) {
+    res.render('quan_tam');
+})
 app.get('/tuyen-dung',function(req,res){
     res.render('tuyendung');
 });
