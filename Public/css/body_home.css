@@ -5,6 +5,10 @@ img {
     width: 100%;
 }
 
+.my-body-section {
+    padding: 0 3%;
+}
+
 .banner_QC {
     margin-bottom: 30px;
 }
@@ -15,12 +19,22 @@ img {
     margin-bottom: 22px;
 }
 .camket {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
     color: #9b9b9b;
     margin: 18px 0;
 }
+
+.camket-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.camket-link:hover H1 {
+    color: #ff6600;
+    transition: 0.4s;
+}
+
 .camket h1 {
     margin: 0;
     margin-top: 10px;

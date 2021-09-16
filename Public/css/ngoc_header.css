@@ -3,6 +3,15 @@
     --left-to : 30%;
 }
 
+i>span {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 4px;
+}
+
+.my-body-section {
+    padding: 0 3%;
+}
+
 .exit-hover {
     position: fixed;
     top: 0;
@@ -387,11 +396,11 @@
 }
 
 .modal-form__account-change {
-    font-weight: 400;
-    font-size: 14px;
+    font-weight: 600;
+    font-size: 18px;
     color: blue;
     cursor: pointer;
-    padding: 6px;
+    padding: 8px 10px;
     border-radius: 2px;
 }
 

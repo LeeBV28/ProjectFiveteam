@@ -28,8 +28,8 @@ app.get('/list-sp',function(req,res) {
     res.render('listsp')
 });
 // Danh sách siêu thị
-app.get('/Thong-tin-lien-he',function(req,res) {
-    res.render('contact')
+app.get('/list-supermarket',function(req,res) {
+    res.render('find_sieuthi')
 });
 
 app.get('/admin',function(req,res) {
@@ -37,12 +37,9 @@ app.get('/admin',function(req,res) {
 });
 
 app.get('/giohang', function(req,res) {
-    res.render('giohang');
+    res.render('giohang')
 });
 
-app.get('/sp-quan-tam', function(req, res) {
-    res.render('quan_tam');
-})
 app.get('/tuyen-dung',function(req,res){
     res.render('tuyendung');
 });
