@@ -22,6 +22,18 @@ app.set('view engine', 'ejs');
 app.get('/',function(req,res) {
     res.render("home")
 });
+app.get('/chinh-sach-bao-hanh',function(req,res) {
+    res.render("ngoc_s--chinh-sach-bao-hanh")
+});
+app.get('/chinh-sach-van-chuyen',function(req,res) {
+    res.render("ngoc_s--chinh-sach-van-chuyen")
+});
+app.get('/s--hang-hoa',function(req,res) {
+    res.render("ngoc_s--hang-hoa")
+});
+app.get('/mua-hang-tra-gop',function(req,res) {
+    res.render("ngoc_s--mua-hang-tra-gop")
+});
 
 // danh sách sản phẩm theo loại sản phẩm
 app.get('/list-sp',function(req,res) {
@@ -80,7 +92,7 @@ app.get('/cv10',function(req,res){
     res.render('cv10');
 });
 app.get('/chitietsp',function(req,res){
-    res.render('chitiet_ngoc');
+    res.render('chitiettv');
 });
 app.get('/chitiettv',function(req,res){
     res.render('chitiettv');
