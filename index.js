@@ -82,6 +82,9 @@ app.get('/cv10',function(req,res){
 app.get('/chitietsp',function(req,res){
     res.render('chitiet_ngoc');
 });
+app.get('/chitiettv',function(req,res){
+    res.render('chitiettv');
+});
 
 app.get('/loadbody', function(req,res) {
     var name = req.query.name;

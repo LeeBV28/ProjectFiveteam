@@ -8,6 +8,8 @@
     margin-left: auto;
     font-size: 15px;
     line-height: 23px;
+    text-align: center;
+    max-width: 1200px;
 }
 
 .container{
@@ -52,7 +54,7 @@
     padding-right: 15px;
     padding-left: 15px;
     float: left;
-    width: 41%;
+    width: 55%;
     overflow: hidden;
 }
 .content-product-right{
@@ -65,7 +67,7 @@
     padding-right: 15px;
     padding-left: 15px;
     float: right;
-    width: 59%;
+    width: 45%;
 }
 #content-wrapper{
     display: flex;
@@ -199,7 +201,7 @@
     width: 0;
     height: 6px;
     border-radius: 15px;
-    background-color: #c23564;
+    background-color:#0d4da5 ;
     transition: all 0.2s ease;
 }
 .tab-item {
@@ -207,7 +209,7 @@
     padding: 16px 20px 11px 20px;
     font-size: 20px;
     text-align: center;
-    color: #c23564;
+    color:#0d4da5;
     background-color: #fff;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
