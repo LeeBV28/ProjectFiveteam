@@ -383,9 +383,6 @@
 
     </script>
     <script>
-        const $ = document.querySelector.bind(document);
-        const $$ = document.querySelectorAll.bind(document);
-
         const tabs = $$(".tab-item");
         const panes = $$(".tab-pane");
 
@@ -399,6 +396,7 @@
             const pane = panes[index];
 
             tab.onclick = function () {
+                console.log(tab)
                 $(".tab-item.active").classList.remove("active");
                 $(".tab-pane.active").classList.remove("active");
 
