@@ -10,6 +10,37 @@
         .my-body-section {
             margin: 40px 0;
         }
+
+        h2{
+            font-weight: 600;
+            font-size: 20px;
+            text-align: center;
+        }
+
+
+        .page__headind span {
+            font-size: 14px;
+        }
+
+
+        h3 {
+            font-size: 16px;
+        }
+        span {
+            font-weight: 600;
+            margin: 8px 0;
+        }
+        table,tr,th,td {
+            text-align: center;
+            border: 1px solid #333;
+            border-collapse: collapse;
+        }
+        table{
+            line-height: 26px;
+            border: 2px solid #333;
+            margin-bottom: 18px;
+            width: 100%;
+        }
     </style>
 </head>
 
@@ -19,9 +50,151 @@
         <!--    modal form account login-->
         <%-include("modal_form_login")%>
     </header>
-    <div class="hang-chinh-hang">
-        <p>Hàng chính hãng, đảm bảo nguồn gốc xuất xứ rõ ràng....</p>
-        <p>Hàng chính hãng, đảm bảo nguồn gốc xuất xứ rõ ràng....</p>
+    <div class="my-body-section">
+        <div class="page__headind">
+            <h2>
+                CHÍNH SÁCH VẬN CHUYỂN<br>
+                <span><i>(Ngày ban hành và áp dụng 11/01/2020)</i></span>
+            </h2>
+        </div>
+        <h3>1. Mục đích</h3>
+        <p>- Quy định chính sách giao nhận và lắp đặt với mong muốn tạo ra các giá trị gia tăng cho sản phẩm khi khách hàng mua sắm tại Hệ thống Siêu thị Điện máy HC.</p>
+
+        <h3>2. Định nghĩa và Phạm vi áp dụng</h3>
+        <p>- Định nghĩa "Bán kính" được hiểu là khoảng cách từ các siêu thị điện máy HC đến địa điểm giao hàng</p>
+
+        <p>- Phạm vi áp dụng: Tất cả các khách hàng mua sản phẩm Điện tử - Điện lạnh - Viễn thông - Gia dụng thông qua website hc.com.vn (Đơn hàng bán online) và mua trực tiếp tại Hệ thống Siêu thị Điện máy HC.</p>
+
+        <h3>3. Nội dung quy định chính sách giao hàng – lắp đặt</h3>
+        <p><span>3.1. Khung thời gian giao hàng theo khoảng cách từ điểm bán hàng đến địa chỉ giao hàng:</span></p>
+        <table>
+            <tr>
+                <th rowspan="2">Khoảng cách đơn hàng<br>
+
+                    (Từ điểm bán hàng đến địa chỉ giao hàng)</th>
+                <th colspan="2">Thời gian giao hàng</th>
+
+            </tr>
+            <tr>
+
+                <th>Khu vực Hà Nội</th>
+                <th>Tại các Tỉnh</th>
+            </tr>
+            <tr>
+                <td>Đến 10 km</td>
+                <td>Trong vòng 2h</td>
+                <td>rong vòng 3h</td>
+            </tr>
+            <tr>
+                <td>Từ 10 km đến 30 km</td>
+                <td>Trong vòng 4h</td>
+                <td>Trong vòng 4h</td>
+            </tr>
+            <tr>
+                <td>Từ 30 km đến 50 km</td>
+                <td>Trong vòng 6h</td>
+                <td>Trong vòng 6h</td>
+            </tr>
+        </table>
+
+        <p><span>3.2. Dịch vụ giao nhận miễn phí</span></p>
+
+        <table>
+            <tr>
+                <th>Giá trị đơn hàng</th>
+                <th>Khoảng cách miễn phí</th>
+            </tr>
+            <tr>
+                <td>Từ 500,000 đồng đến 5 triệu đồng</td>
+                <td>10 km</td>
+            </tr>
+            <tr>
+                <td>Từ 5 triệu đồng đến 10 triệu đồng</td>
+                <td>30 km</td>
+            </tr>
+            <tr>
+                <td>Từ 10 triệu đồng đến 100 triệu đồng</td>
+                <td>50 km</td>
+            </tr>
+        </table>
+        <p><span>3.3. Dịch vụ giao nhận có tính phí:</span></p>
+        <table>
+            <tr>
+                <th>Loại đơn hàng</th>
+                <th>Phí vận chuyển</th>
+                <th>Khu vực</th>
+            </tr>
+            <tr>
+                <td rowspan="3">Đơn hàng online và đơn hàng mua trực tiếp tại siêu thị có giá trị nhỏ hơn 500,000 đồng</td>
+                <td>15,000 đồng</td>
+                <td>Nội thành</td>
+            </tr>
+            <tr>
+                <td>20,000 đồng</td>
+                <td>Vùng ven ngoại thành</td>
+            </tr>
+            <tr>
+                <td>25,000 đồng</td>
+                <td>Các Huyện phụ cận Thành phố</td>
+            </tr>
+        </table>
+        <p><span>3.4. Phí vận chuyển phát sinh do khoảng cách giao hàng vượt quá số km miễn phí:</span></p>
+        <p>- Khi khoảng cách giao hàng vượt quá số km miễn phí, phí vận chuyển sẽ được tính với đơn giá - 5,000 đồng/1km phát sinh (Không phân biệt phương tiện vận chuyển). Khách hàng thanh toán phí vận chuyển phát sinh (nếu có) ngay tại quầy thu ngân. Phí vận chuyển phát sinh sẽ được thể hiện rõ trong Phiếu biên nhận.</p>
+
+        <p><span><i>Lưu ý:</i></span></p>
+
+        <p>* Trường hợp nào không thu phí quá km của KH mà thực tế phát sinh chi phí quá km cho nhân viên kỹ thuật lắp đặt thì các cá nhân có trách nhiệm liên quan trong quá trình lập đơn hàng sẽ phải chịu trách nhiệm.</p>
+
+        <p>- Tại một số thời điểm đặc thù, khách hàng được siêu thị khuyến khích tự vận chuyển sản phẩm về nhà. Khi đó mức hỗ trợ giảm trừ phí vận chuyển cho khách hàng sẽ như sau:</p>
+
+        <p>* Sản phẩm Gia dụng - Loại trừ những SP có thể sách tay mang về ngay (như chảo, nồi đơn, máy sấy tóc, đĩa, cốc chén...): Khách hàng sẽ được trừ phí 20,000đ/1 sản phẩm.</p>
+
+        <p>* Sản phẩm Điện lạnh, Điện tử: từ 20,000 - 200,000/1 sản phẩm, tùy thuộc kích cỡ.</p>
+
+        <p><span>3.5. Thời gian phục vụ giao hàng</span></p>
+        <p>- Thời gian giao hàng và lắp đặt: từ 8h00 đến 22h00 tất cả các ngày trong tuần.</p>
+
+        <p>- Các đơn hàng khách hàng đặt hàng sau 18h, Siêu thị sẽ giao hàng trước 12h sáng hôm sau hoặc theo lịch hẹn của khách hàng.</p>
+
+        <p>- Các đơn hàng ngoài chính sách vận chuyển miễn phí sẽ được thực hiện theo thời gian thống nhất với khách hàng tùy thuộc giá trị đơn hàng và khoảng cách giao hàng.</p>
+
+        <p>- Trong một số trường hợp khách quan VHC có thể giao hàng chậm trễ do những điều kiện bất khả kháng như thời tiết xấu, điều kiện giao thông không thuận lợi, xe hỏng hóc trên đường giao hàng, trục trặc trong quá trình xuất hàng.</p>
+
+        <p>- Trong thời <giap>n chờ đợi nhận hàng, Quý khách có bất cứ thắc mắc gì về thông tin vận chuyển xin vui lòng liên hệ Tổng đài chăm sóc khách hàng của Công ty để được trợ giúp.</p></giap>
+
+        <p><span>3.6. Giao hàng ở xa</span></p>
+        <p>- Đối với đơn hàng giao hàng ở xa thông qua dịch vụ vận chuyển thuê ngoài, để an toàn cho hàng hóa của quí khách, VHC sẽ đóng gói hàng hóa trong các bao bì hoặc thùng hàng chuyên dụng lớn hơn kích thước hàng.</p>
+
+        <p>- Cước phí chuyển: được tính dựa trên Trọng lượng hàng hoặc Trọng lương qui đổi từ kích thước (đối với hàng cồng kềnh), chi phí đóng kiện gỗ, cự ly nơi giao hàng</p>
+
+        <p>- Cách thức tính Trọng lượng qui đổi từ kích thước (đối với hàng cồng kềnh – theo đúng tiền lệ của ngành chuyển phát): Chiều dài (cm) x Chiều rộng (cm) x Chiều cao(cm)/6000</p>
+
+        <p>- Quý khách có thể tham khảo Phụ lục Cước vận chuyển và Chỉ tiêu thời gian vận chuyển theo giá của đơn vị cung cấp. (khách hàng có thể tự lựa chọn đơn vị khác cung cấp dịch vụ vận chuyển)</p>
+
+        <p>- Nếu đơn hàng của quý khách cần phải chuyển đi bằng những chuyến hàng khác nhau hoặc phải chuyển đi nhiều lần, cước phí chuyển toàn bộ đơn hàng của quí khách sẽ được tính một (01) lần tại thời điểm chuyển hàng đầu tiên.</p>
+
+        <p><span>3.7. Trách nhiệm với hàng hóa vận chuyển</span></p>
+        <p>- Nếu dịch vụ vận chuyển do VHC hoặc do chúng tôi chỉ định sẽ chịu trách nhiệm với hàng hóa và các rủi ro như mất mát hoặc hư hại của hàng hóa trong suốt quá trình vận chuyển hàng từ VHC đến quý khách.</p>
+
+        <p>- Quý khách có trách nhiệm kiểm tra hàng hóa khi nhận hàng. Khi phát hiện hàng hóa bị hư hại, trầy xước, bể vỡ, mốp méo, hoặc sai hàng hóa thì ký xác nhận tình trạng hàng hóa với Nhân viên giao nhận và thông báo ngay cho Bộ phận dịch vụ khách hàng.</p>
+
+        <p>- Sau khi quý khách đã ký nhận hàng mà không ghi chú hoặc có ý kiến về hàng hóa, Siêu thị HC sẽ không chịu trách nhiệm với những hư hỏng, trầy xước, bể vỡ, móp méo, sai hàng hóa… phát sinh sau thời điểm quý khách ký nhận hàng.</p>
+
+        <p>- Nếu dịch vụ vận chuyển do quý khách chỉ định và lựa chọn thì quý khách sẽ chịu trách nhiệm với hàng hóa và các rủi ro như mất mát hoặc hư hại của hàng hóa trong suốt quá trình vận chuyển hàng từ VHC đến quý khách. Khách hàng sẽ chịu trách nhiệm cước phí và tổn thất liên quan.</p>
+
+        <p><span>3.8. Lắp đặt sản phẩm</span></p>
+        <p>- Đối với sản phẩm Tivi: Khi khách hàng mua tivi kèm theo giá treo, công ty sẽ tặng công lắp đặt. Đối với các trường hợp khác công ty sẽ tính chi phí lắp đặt.</p>
+
+        <p>- Trong quá trình thực hiện việc lắp đặt sản phẩm tại nhà sẽ phát sinh một số vật tư sử dụng thực tế phát sinh ngoài định mức hoặc một số công việc nằm ngoài phạm vi lắp đặt sản phẩm chính. Trong trường hợp này quí khách vui lòng thanh toán những phát sinh theo bảng giá dịch vụ, phụ kiện, vật tư của Công ty.</p>
+
+        <p>- Lưu ý: Đội ngũ giao nhận lắp đặt của VHC không có đầy đủ trang thiết bị máy móc và chưa được trang bị những kỹ năng cần thiết phục vụ một số dịch vụ thi công, xây dựng. Do đó, quí khách vui lòng thuê dịch vụ bên ngoài hoàn tất các hạng mục, và vật dụng, trang thiết bị cần thiết đảm bảo điều kiện phù hợp để lắp đặt sản phẩm trước khi nhân viên của VHC đến giao hàng và lắp đặt.</p>
+
+        <p><span>3.9. Cài đặt thiết bị kỹ thuật số</span></p>
+        <p>- VHC chỉ cài đặt các phầm mềm tin học có bản quyền. Trường hợp khách hàng cần cài đặt để kiểm tra, chúng tôi sẽ tiến hành cài đặt các phần mềm có mã nguồn mở, miễn phí.</p>
+
+        <p>- VHC chỉ hỗ trợ cài đặt hình, nhạc, chuông, games… từ các trang web chính thức (có đăng ký bản quyền theo luật định)</p>
+
+        <p>- Các trường hợp khách hàng tự lắp đặt/ cài đặt sản phẩm: Khách hàng sẽ tự chịu trách nhiệm về kỹ thuật cài đặt/ lắp đặt cũng như mọi rủi ro, tổn thất phát sinh.</p>
     </div>
     <footer class="footer">
         <%-include("ngoc_footer")%>
