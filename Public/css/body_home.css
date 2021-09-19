@@ -82,6 +82,14 @@ img {
     width: 50%;
     border-radius: 5px;
 }
+.col h1 {
+    width: 300px;
+    border-bottom: 3px solid var(--color-ori);
+    margin-bottom: 0px;
+}
+hr {
+    margin: 0;
+}
 .sanphamhot h1 {
     text-transform: capitalize;
     font-size: 30px;
