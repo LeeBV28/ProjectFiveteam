@@ -13,8 +13,6 @@ body {
 }
 .title-result-find{
     text-align: center;
-    font-weight: bold;
-    font-size: 25px;
 }
 .container{
     font-size: 12px;
@@ -31,11 +29,6 @@ body {
     border-left: 1px solid #717070;
     border-right: 1px solid #717070;
     border-bottom: 1px solid #717070;
-
-
-
-
-
 }
 .title-cv{
     font-size: 18px;
@@ -65,11 +58,7 @@ body {
     text-align: center;
 }
 .row.td-detail{
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    -webkit-text-size-adjust: 100%;
-    -webkit-font-smoothing: antialiased;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 23px;
     color: #3e3e3e;
     box-sizing: border-box;
@@ -79,10 +68,6 @@ body {
     padding-left: 15px;
 }
 .pagination{
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    -webkit-text-size-adjust: 100%;
-    -webkit-font-smoothing: antialiased;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     line-height: 23px;
     color: #3e3e3e;
     box-sizing: border-box;
@@ -94,5 +79,5 @@ body {
     width: 100%;
 }
 .pages{
-   float: right;
+    float: right;
 }

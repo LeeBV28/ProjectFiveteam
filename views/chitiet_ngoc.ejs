@@ -3,8 +3,6 @@
 <head>
     <%- include('head') %>
     <title>Chi Tiết</title>
-    <!-- css -->
-    <link rel="stylesheet" href="/css/listsp.css">
     <!-- boxicon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <!-- themify icon -->
@@ -13,11 +11,12 @@
     <link rel="stylesheet" href="./css/ngoc_header.css">
     <link rel="stylesheet" href="./css/sub_header.css">
     <link rel="stylesheet" href="./css/chitietsp.css">
+    <link rel="stylesheet" href="./css/ngoc_footer.css">
 </head>
 <body>
-    <header class="header">
-        <%-include("ngoc_header")%>
-    </header>
+<header class="header">
+    <%-include("ngoc_header")%>
+</header>
     <section>
         <div class="main-container container">
             <ul class="breadcrumb">
@@ -34,7 +33,7 @@
                 <div id="content" class="col-md-12 ">
                     <div class="product-view row">
                         <div class="left-content-product">
-                            <div class="content-product-left class-honizol col-md-7 ">
+                            <div class="content-product-left class-honizol col-md-6 ">
                                 <div class="column">
                                     <img id=featured src="./image/chitietsp/00026922_FEATURE_47261.jpg">
 
@@ -75,14 +74,12 @@
 
                                 <div id="product">
                                     <div class="form-group box-info-product hc_cutom_box_infor">
-                                        <div class="option quantity">
-                                            <div class="input-group quantity-control" unselectable="on" style="-webkit-user-select: none;"><label>SL</label>
-                                                <input id="ITEM_CART_QTY" class="form-control" type="text" name="quantity" value="1">
-                                                <input type="hidden" name="product_id" value="50">
-                                                <span class="input-group-addon product_quantity_down">−</span>
-                                                <span class="input-group-addon product_quantity_up">+</span>
-                                            </div>
-                                        </div><div class="cart">
+                                        <div class="quantity">
+                                                <label for="quantity">SL:</label>
+                                            <input id="ITEM_CART_QTY" class="form-control" type="number" name="quantity" value="1">
+                                            <input type="hidden" name="product_id" value="50">
+                                        </div>
+                                        <div class="cart">
                                             <input type="button" data-toggle="tooltip" title="" value="Mua hàng" data-loading-text="Loading..." id="ADD_TO_CART_00026922" data-itemid="28722" class="btn btn-mega btn-lg" onclick="return false;" data-original-title="Thêm vào giỏ hàng">
                                         </div>
                                         <!-- end box info product -->
@@ -348,6 +345,7 @@
         </div>
     </section>
     <%-include("modal_form_login")%>
+    <!--modal--!>
     <script type="text/javascript">
         let thumbnails = document.getElementsByClassName('thumbnail')
 
@@ -382,6 +380,7 @@
 
 
     </script>
+    <!--tab-slider--!>
     <script>
         const tabs = $$(".tab-item");
         const panes = $$(".tab-pane");
