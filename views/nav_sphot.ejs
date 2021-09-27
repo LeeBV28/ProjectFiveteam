@@ -1,23 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <%- include('head') %>
-    <title>Chi Tiết</title>
-    <%-include("ngoc_head")%>
-    <!-- css -->
+    <%-include("head")%>
+        <title>Home</title>
     <link rel="stylesheet" href="/css/listsp.css">
+
+    <%-include("ngoc_head")%>
+    <!-- css body home -->
+    <link rel="stylesheet" href="/css/body_home.css">
     <!-- boxicon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <!-- themify icon -->
     <link rel="stylesheet" href="./fonts/themify-icons/themify-icons.css">
-    <!-- css header -->
-    <link rel="stylesheet" href="./css/ngoc_header.css">
-    <link rel="stylesheet" href="./css/sub_header.css">
+    <style>
+        .list-product-detail {
+            display: none;
+        }
+        .header__list-product:hover .list-product-detail.list-product-detail {
+            display: flex;
+        }
+        .main .QC_sanpham {
+            margin: 0;
+        }
+        .spbanchay {
+            margin-top: 10px;
+        }
+        .spbanchay h1 {
+            margin-bottom: 0;
+        }
+        .sanphamhot h1 {
+            margin: 10px 0 0 0;
+        }
+    </style>
 </head>
 <body>
-    <header class="header">
+    <header>
         <%-include("ngoc_header")%>
+        <!--    modal form account login-->
+        <%-include("modal_form_login")%>
     </header>
+
     <section class="lisp_container">
         <div class="container">
             <div class="row">
@@ -72,40 +95,33 @@
                             </button>
                         </div>
                     </div>
-                    <!-- xong slider -->
-                    
-                    <div class="showSp">
-                        <h1>Có <%=resul.length %> <%=name %> </h1>
-                        <!-- bắt đâu show từng sản phẩm -->
-                        <% for(var i = 0; i < resul.length; i++) { %>
-                            <div class="show">
-                                <a href="/chi-tiet-sp?maspValue=<%=resul[i].Masp %>">
-                                    <img src="<%=resul[i].Image %>" alt="">
-                                </a>
-                                <a href="/chi-tiet-sp?maspValue=<%=resul[i].Masp %>">
-                                    <p><%=resul[i].Tensp %></h3>
-                                </a>
-                                <h4><%=resul[i].Gia %>đ</h4>
-                                <div class="show_hidden">
-                                    <div class="add-cart" data-key="<%=resul[i].Masp %>" onclick="addCart(this)">
-                                        <i class='bx bxs-cart'>
-                                            <p class="add_cart hover_flex">
-                                                Thêm vào giỏ hàng
-                                            </p>
-                                        </i>
-                                    </div>
-                                    <div class="add-like" data-key="<%=resul[i].Masp %>" onclick="addLike(this)">
-                                        <i class='bx bxs-add-to-queue' >
-                                            <p class="add_like hover_flex">
-                                                Thêm vào mục ưu thích
-                                            </p>
-                                        </i>
-                                    </div>
-                                </div>
+                    <!-- xong slider -->                    
+                    <div class="sanphamhot">
+                        <div class="row">
+                            <h1>Sản phẩm đang hót</h1>
+                            <hr>
+                        </div>
+                        <div class="sanphamhot_conten">
+                            <div class="row">
+                                <!-- reander sản phẩm -->                                                     
                             </div>
-                        <% } %>
-                        <!-- kết thúc show từng sản phẩm -->
-                    </div>                    
+                            <!-- sang trang -->
+                            <div class="tab-chuyentrang">
+                                <ul>
+                                    <li class="tab-item chevron left">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </li>
+                                    <li class="tab-item page active">1</li>
+                                    <li class="tab-item page">2</li>
+                                    <li class="tab-item page">3</li>
+                                    <li class="tab-item chevron right">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- end sang trang -->
+                        </div>
+                    </div>                   
                 </div>
                 <!-- fillter thanh tìm kiếm bên phải -->
                 <div class="col-3 fillter">
@@ -149,11 +165,13 @@
             </div>
         </div>
     </section>
-    <%-include("modal_form_login")%>
-
+    
+    
     <footer class="footer">
         <%-include("ngoc_footer")%>
     </footer>
-    <script src="./js/listsp.js"></script>
+
+    <script src="./js/body_home.js"></script>
 </body>
+
 </html>

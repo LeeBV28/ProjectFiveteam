@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%-include("head")%>
+    <title>Chi Tiết</title>
+    <%-include("ngoc_head")%>
+    <link rel="stylesheet" href="./css/le_chitietsp.css">
+    <!-- icon -->
+    <script src="https://kit.fontawesome.com/7fbca7d9d5.js" crossorigin="anonymous"></script>
+    <!-- boxicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- themify icon -->
+    <link rel="stylesheet" href="./fonts/themify-icons/themify-icons.css">
+</head>
+<body>
+    <header>
+        <%-include("ngoc_header")%>
+        <!--    modal form account login-->
+        <%-include("modal_form_login")%>
+    </header>
+
+    <div class="main">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="title-dautrang">
+                    <h1>
+                        <%= sanPham.Tensp %>
+                    </h1>
+                    <hr>
+                </div>
+                <div class="col-8">
+                    <div class="image">
+                        <img src="<%=image.Hinh1 %>" alt="">
+                    </div>
+                    <div class="sub-image">
+                        <img class="active" src="<%=image.Hinh1 %>" alt="">
+                        <img src="<%=image.Hinh2 %>" alt="">
+                        <img src="<%=image.Hinh3 %>" alt="">
+                        <img src="<%=image.Hinh4 %>" alt="">
+                        <img src="<%=image.Hinh5 %>" alt="">
+                        <img src="<%=image.Hinh6 %>" alt="">
+                    </div>
+                    <div class="mo-ta">
+                        <h1>Mô tả sản phẩm</h1>
+                        <div class="noi-dung  overhiden">
+                            <div class="overlay">
+
+                            </div>
+                            <% for(var i = 0; i < moTa.length; i ++) {%>                            
+                                <h2>
+                                    <%= moTa[i].TieuDe %>
+                                </h2>
+                                <p>
+                                    <%= moTa[i].Mota %>
+                                </p>
+                                <img src="<%= moTa[i].HinhAnh %>" alt="">
+                            <%} %>
+                        </div>
+                        <div class="btn_xem-them">
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <button class="btn btn-outline-primary dow" type="button">
+                                    <i class="fas fa-angle-double-down"></i>
+                                    Xem Thêm
+                                    <i class="fas fa-angle-double-down"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <p>Hàng có sẵn tại siêu thị</p>
+                    <h2 class="gia">Giá: <span><%= sanPham.Gia %></span>đ</h2>
+                    <img src="./image/giao-hang-5.jpg" alt="">
+                    <div class="mua-ngay">
+                        <h2>Mua ngay hôm nay giảm <span>100K</span> còn</h2>
+                        <h3 class="gia-km"> <span></span>đ</h3>
+                    </div>
+                    <div class="qua-tang">
+                        <h2>Quà tặng ngập tràn</h2>
+                        <div class="list_qua-tang">
+                            <p class="nb">
+                                1
+                            </p>
+                            <p class="conten">
+                                Tặng Phiếu mua hàng gia dụng trị giá 300,000đ.
+                            </p>
+                        </div>                        
+                        <div class="list_qua-tang">
+                            <p class="nb">
+                                2
+                            </p>
+                            <p class="conten">
+                                Mau thêm 2 sản phẩm giảm thêm 5% cho toàn bộ hoá đơn.
+                            </p>
+                        </div>
+                        <div class="list_qua-tang">
+                            <p class="nb">
+                                3
+                            </p>
+                            <p class="conten">
+                                Tư vấn kỹ thuật, lắp đặt miễn phí tận nhà.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="btn-sp">
+                        <div class="d-grid gap-2">
+                            <button name="order" class="btn btn-primary" type="button" data-key="<%=sanPham.Masp %>">Mua Ngay</button>
+                            <button class="btn btn-primary add-like" type="button" data-key="<%=sanPham.Masp %>">Thêm Vào Sản Phẩm Yêu Thích</button>
+                        </div>
+                    </div>
+                    <div class="thong-so">
+                        <h2>Thông số kỹ thuật</h2>
+                        <div class="noidung">
+                                <ul>
+                                <% for (var i = 0; i < thongSo.length; i++) {%>
+                                    <li>
+                                        <p><%=thongSo[i].ThongSo %>:</p>
+                                        <p><%=thongSo[i].GiaTriTS %></p>
+                                    </li>
+                                <%} %>    
+                                </ul>                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="sp-khac">
+                    <h1>Xem thêm sản phẩm khác</h1>
+                    <div class="noidung_sp-khac">
+                        <% for (var i =0; i < xemThem.length; i++) { %>                        
+                            <div class="show">
+                                <a href="/chi-tiet-sp?maspValue=<%=xemThem[i].Masp %>">
+                                    <img src="<%=xemThem[i].HinhAnh %>" alt="">
+                                </a>
+                                <a href="/chi-tiet-sp?maspValue=<%=xemThem[i].Masp %>">
+                                    <p><%=xemThem[i].Tensp %></p>
+                                </a>
+                                <h4><%=xemThem[i].Gia %>đ</h4>
+                                <div class="show_hidden">
+                                    <div class="add-cart" data-key="<%=xemThem[i].Masp %>">
+                                        <i class='bx bxs-cart'>
+                                            <p class="add_cart hover_flex">
+                                                Thêm vào giỏ hàng
+                                            </p>
+                                        </i>
+                                    </div>
+                                    <div class="add-like" data-key="<%=xemThem[i].Masp %>">
+                                        <i class='bx bxs-add-to-queue'>
+                                            <p class="add_like hover_flex">
+                                                Thêm vào mục ưu thích
+                                            </p>
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                        <%} %>                        
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="binhluan">
+                    <div class="form-input">
+                        <h2>Gửi bình luận</h2>
+                        <textarea type="text" class="form-control" placeholder="Nhập nội dung..."></textarea>
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Họ tên (Bắt buộc)">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="col-1">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="load-binhluan">
+                        <h1>Có <span>1</span> bình luận</h1>
+                        <!-- <% for (var i = 0; i < binhLuan.length; i++) { %> 
+
+                            <%} %> -->
+                        <div class="cmt">
+                            <div class="col-1">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <div class="col">
+                                <h2>Tên</h2>
+                                <p>Cho em hỏi tại sao đổ nước giặt vào khay thì bó lại chảy ra tử ống xả ạ? Lúc này vẫn chưa khởi động máy, chỉ mới bỏ áo quần và bỏ nước giặt</p>
+                                <p class="rep-cmt">
+                                    Trả lời
+                                </p>                                
+                                <div class="sub-cmt">
+                                    <div class="drop-up">
+
+                                    </div>                                    
+                                    <div class="form-input none">
+                                        <h2>Gửi bình luận</h2>
+                                        <textarea type="text" class="form-control" placeholder="Nhập nội dung..."></textarea>
+                                        <div class="row">
+                                            <div class="col">
+                                                <input type="text" class="form-control" placeholder="Họ tên (Bắt buộc)">
+                                            </div>
+                                            <div class="col">
+                                                <input type="text" class="form-control" placeholder="Email">
+                                            </div>
+                                            <div class="col-1">
+                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <i class="fas fa-user-tie"></i>
+                                    </div>
+                                    <div class="col">
+                                        <h2>Tên</h2>
+                                        <p>Cho em hỏi tại sao đổ nước giặt vào khay thì bó lại chảy ra tử ống xả ạ? Lúc này vẫn chưa khởi động máy, chỉ mới bỏ áo quần và bỏ nước giặt</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cmt">
+                            <div class="col-1">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <div class="col">
+                                <h2>Tên</h2>
+                                <p>Cho em hỏi tại sao đổ nước giặt vào khay thì bó lại chảy ra tử ống xả ạ? Lúc này vẫn chưa khởi động máy, chỉ mới bỏ áo quần và bỏ nước giặt</p>
+                                <p class="rep-cmt">
+                                    Trả lời
+                                </p>                                
+                                <div class="sub-cmt">
+                                    <div class="drop-up">
+
+                                    </div>                                    
+                                    <div class="form-input none">
+                                        <h2>Gửi bình luận</h2>
+                                        <textarea type="text" class="form-control" placeholder="Nhập nội dung..."></textarea>
+                                        <div class="row">
+                                            <div class="col">
+                                                <input type="text" class="form-control" placeholder="Họ tên (Bắt buộc)">
+                                            </div>
+                                            <div class="col">
+                                                <input type="text" class="form-control" placeholder="Email">
+                                            </div>
+                                            <div class="col-1">
+                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <!-- <i class="fas fa-user-tie"></i> -->
+                                    </div>
+                                    <div class="col">
+                                        <!-- <h2>Tên</h2>
+                                        <p>Cho em hỏi tại sao đổ nước giặt vào khay thì bó lại chảy ra tử ống xả ạ? Lúc này vẫn chưa khởi động máy, chỉ mới bỏ áo quần và bỏ nước giặt</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <%-include("ngoc_footer")%>
+    </footer>
+
+    <script src="./js/chitietsp.js"></script>
+</body>
+</html>

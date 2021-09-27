@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%-include("head")%>
+    <title>Giỏ Hàng</title>
+    <%-include("ngoc_head")%>
+    <link rel="stylesheet" href="./css/giohang.css">
+    <!-- icon -->
+    <script src="https://kit.fontawesome.com/7fbca7d9d5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <%-include("ngoc_header")%>
+        <!--    modal form account login-->
+        <%-include("modal_form_login")%>
+    </header>
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="section">
+                    <div class="cart-empty">
+                        <i class="fas fa-shopping-cart">
+                            <i class="fas fa-times-circle"></i>                            
+                        </i>
+                    <p>Không có sản phẩm nào trong giỏ hàng</p>
+                        <a href="/">Tiếp tục mua hàng</a>
+                    </div>
+                </div>
+                <p class="chantrang">Cảm ơn quý khách</p>  
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <%-include("ngoc_footer")%>
+    </footer>
+
+    <!-- <script src="./js/giohang.js"></script> -->
+</body>
+</html>

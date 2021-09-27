@@ -26,72 +26,15 @@
                     </p>
                     <p>Giỏ hàng của bạn</p>
                 </div>
-                <form class="section">
+                <div id="get-info" class="section">
                     <div class="product-class">
-                        <div class="sanpham">
-                            <div class="left">
-                                <div class="anh">
-                                    <img src="https://cdn.tgdd.vn/Products/Images/1944/223305/lg-th2111dsab-200x200.jpg" alt="maygiat">
-                                    <p class="xoa">
-                                        <i class="fas fa-times-circle"></i>
-                                        Xoá
-                                    </p>
-                                </div>
-                                <div class="ten">
-                                    <h1>Máy Giặt LG Inverter 11kg TH2111DSAB</h1>
-                                    <p>Thương hiệu: SamSung</p>
-                                </div>
-                            </div>
-                            <div class="right">
-                                <div class="gia">
-                                    <p>20.000.000đ</p>
-                                </div>
-                                <div class="soluong">
-                                    <p class="tru nut">
-                                        <i></i>
-                                    </p>
-                                    <p class="number">2</p>
-                                    <p class="cong nut">
-                                        <i class="fas fa-plus"></i>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="sanpham">
-                            <div class="left">
-                                <div class="anh">
-                                    <img src="https://cdn.tgdd.vn/Products/Images/1944/223305/lg-th2111dsab-200x200.jpg" alt="maygiat">
-                                    <p class="xoa">
-                                        <i class="fas fa-times-circle"></i>
-                                        Xoá
-                                    </p>
-                                </div>
-                                <div class="ten">
-                                    <h1>Máy Giặt LG Inverter 11kg TH2111DSAB</h1>
-                                    <p>Thương hiệu: SamSung</p>
-                                </div>
-                            </div>
-                            <div class="right">
-                                <div class="gia">
-                                    <p>20.000.000đ</p>
-                                </div>
-                                <div class="soluong">
-                                    <p class="tru nut">
-                                        <i></i>
-                                    </p>
-                                    <p class="number">1</p>
-                                    <p class="cong nut">
-                                        <i class="fas fa-plus"></i>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                     <div class="sum">
                         <p class="tamtinh">
                             Tạm tính (<span>Số</span> sản phẩm):
                         </p>
-                        <p class="gia">
+                        <p class="sum-tien">
                             <span>20.000.000đ</span>
                         </p>
                     </div>
@@ -101,10 +44,10 @@
                                 <h1>Thông tin khách hàng:</h1>
                                 <div class="row">
                                     <div class="col">
-                                        <input type="text" class="form-control" placeholder="Tên bạn" required>
+                                        <input type="text" name="name" class="form-control" placeholder="Tên bạn" required>
                                     </div>
                                     <div class="col">
-                                        <input type="number" class="form-control" placeholder="Số điện thoại" required>
+                                        <input type="number" name="phone" class="form-control" placeholder="Số điện thoại" required>
                                     </div>
                                 </div>
                             </div>
@@ -120,18 +63,18 @@
                                         <h3>Địa chỉ nhận hàng</h3>
                                         <div class="row">
                                             <div class="col">
-                                                <input type="text" class="form-control" placeholder="Tỉnh / Thành Phố" required>
+                                                <input type="text" name="tinh" class="form-control" placeholder="Tỉnh / Thành Phố" required>
                                             </div>
                                             <div class="col">
-                                                <input type="text" class="form-control" placeholder="Quận / Huyện" required>
+                                                <input type="text" name="quan" class="form-control" placeholder="Quận / Huyện" required>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col">
-                                                <input type="text" class="form-control" placeholder="Phường / Xã" required>
+                                                <input type="text" name="phuong" class="form-control" placeholder="Phường / Xã" required>
                                             </div>
                                             <div class="col">
-                                                <input type="text" class="form-control" placeholder="Số nhà, tên đường" required>
+                                                <input type="text" name="soNha" class="form-control" placeholder="Số nhà, tên đường" required>
                                             </div>
                                         </div>
                                         <div class="chilen">
@@ -150,7 +93,7 @@
                                 </div>                                
                             </div>
                             <div class="yeucaukhac">
-                                <input type="text" class="form-control" placeholder="Yêu cầu khác (nếu có)">
+                                <input type="text" class="form-control" name="ghichu" placeholder="Yêu cầu khác (nếu có)">
                             </div>
                         </div>                      
                     </div> 
@@ -163,7 +106,7 @@
                             <button class="btn btn-primary" type="submit">Đặt Hàng</button>
                           </div>
                     </div>
-                </form> 
+                </div>
                 <p class="chantrang">Cảm ơn quý khách</p>              
             </div>
         </div>

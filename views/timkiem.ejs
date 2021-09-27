@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%-include("head")%>
+        <title>Home</title>
+    <link rel="stylesheet" href="/css/listsp.css">
+
+    <%-include("ngoc_head")%>
+    <!-- css body home -->
+    <link rel="stylesheet" href="/css/body_home.css">
+    <!-- boxicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- themify icon -->
+    <link rel="stylesheet" href="./fonts/themify-icons/themify-icons.css">
+    <style>
+        .list-product-detail {
+            display: none;
+        }
+        .header__list-product:hover .list-product-detail.list-product-detail {
+            display: flex;
+        }
+        .main .QC_sanpham {
+            margin: 0;
+        }
+        .spbanchay {
+            margin-top: 10px;
+        }
+        .spbanchay h1 {
+            margin-bottom: 0;
+        }
+        .sanphamhot h1 {
+            margin: 10px 0 0 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <%-include("ngoc_header")%>
+        <!--    modal form account login-->
+        <%-include("modal_form_login")%>
+    </header>
+
+    <section class="lisp_container">
+        <div class="container">
+            <div class="row">
+                <div class="col-9 main">
+                    <div class="QC_sanpham">
+                        <div class="col-6">
+                            <a href="#">
+                                <img src="./image/1992236_BANNER_DESKTOP_IMAGE_1_89765.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <a href="#">
+                                <img src="./image/1992261_BANNER_DESKTOP_IMAGE_1_90652.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Slider sản phẩm bán chạy -->
+                    <div class="spbanchay">
+                        <h1>Tìm kiếm nhiều nhất</h1>
+                        <hr>                    
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <!-- slide 1 -->
+                                <div class="carousel-item active">
+                                    <div class="slider">
+    
+                                    </div>
+                                </div>
+                                <!-- Slide 2 -->
+                                <div class="carousel-item">
+                                    <div class="slider">                              
+                                        
+                                    </div>
+                                </div>
+                                <!-- slide 3 -->
+                                <div class="carousel-item">
+                                    <div class="slider">
+    
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- nút prev và next -->
+                            <button class="carousel-control-prev btn-menu" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next btn-menu" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- xong slider -->                    
+                    <div class="sanphamhot">
+                        <div class="row">
+                            <h1>Sản phẩm đang hót</h1>
+                            <hr>
+                        </div>
+                        <div class="sanphamhot_conten">
+                            <div class="row">
+                                <% for(var i=0; i<sanPham.length; i++) {%>
+                                    <div class="show">
+                                        <a
+                                            href="/chi-tiet-sp?maspValue=<%=sanPham[i].Masp %>">
+                                            <img src="<%=sanPham[i].HinhAnh %>"
+                                                alt="">
+                                        </a>
+                                        <a
+                                            href="/chi-tiet-sp?maspValue=<%=sanPham[i].Masp %>">
+                                            <p><%=sanPham[i].Tensp %></p>
+                                        </a>
+                                        <h4><%=sanPham[i].Gia %>đ</h4>
+                                        <div class="show_hidden">
+                                            <div class="add-cart"
+                                                data-key="<%=sanPham[i].Masp %>">
+                                                <i class="bx bxs-cart">
+                                                    <p class="add_cart hover_flex">
+                                                        Thêm vào giỏ hàng
+                                                    </p>
+                                                </i>
+                                            </div>
+                                            <div class="add-like"
+                                                data-key="<%=sanPham[i].Masp %>">
+                                                <i class="bx bxs-add-to-queue">
+                                                    <p class="add_like hover_flex">
+                                                        Thêm vào mục ưu thích
+                                                    </p>
+                                                </i>
+                                            </div>
+                                        </div>
+                                        <div class="button_show">
+                                            <a href="/list-sp?Name=<%=sanPham[i].Loaisp %>">
+                                                Xem thêm sản phẩm tương tự
+                                            </a>
+                                        </div>
+                                    </div>
+                                <%} %>
+                            </div>
+                            <!-- sang trang -->
+                            <div class="tab-chuyentrang">
+                                <ul>
+                                    <li class="tab-item chevron left">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </li>
+                                    <li class="tab-item page active">1</li>
+                                    <li class="tab-item page">2</li>
+                                    <li class="tab-item page">3</li>
+                                    <li class="tab-item chevron right">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- end sang trang -->
+                        </div>
+                    </div>                   
+                </div>
+                <!-- fillter thanh tìm kiếm bên phải -->
+                <div class="col-3 fillter">
+                    <h1 class="title">Lọc sản phẩm</h1>
+                    <div class="nhomlienquan">
+                        <h2>nhóm liên quan</h2>
+                        <p><a href="#">Tivi</a></p>
+                        <p><a href="#">Âm thanh & phụ kiện tivi</a></p>
+                        <hr>
+                    </div>
+                    <div class="hangthuonghieu">
+                        <h2>Hãng/thương hiệu</h2>
+                        <p>
+                            <input type="checkbox" id="all" class="form-check-input">
+                            <label for="all">Toàn bộ</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="Samsung" class="form-check-input">
+                            <label for="Samsung">Sam Sung</label>
+                        </p>
+                        <hr>
+                    </div>
+                    <div class="khoanggia">
+                        <h2>Khoảng giá</h2>
+                        <p>
+                            <input type="checkbox" id="price_all" class="form-check-input">
+                            <label for="price_all">Toàn bộ</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="duoi5tr" class="form-check-input">
+                            <label for="duoi5tr">Dưới 5 triệu</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="tren5tr" class="form-check-input">
+                            <label for="tren5tr">Trên 5 triệu</label>
+                        </p>
+                        <hr>
+                    </div>
+                </div>
+                <!-- kết thúc fillter -->
+            </div>
+        </div>
+    </section>
+    
+    
+    <footer class="footer">
+        <%-include("ngoc_footer")%>
+    </footer>
+
+    <script>
+        function loadTk() {
+            $.ajax({
+                url: '/load-tk',
+                method: 'GET',
+                success: function (rs) {
+                    var showHtmls = '';
+                    var carouselElement = document.querySelectorAll('.carousel-item .slider')
+                    for (var i = 0; i < rs.length; i++) {
+                        var tkHtml = `
+                    <div class="show">
+                        <a href="/chi-tiet-sp?maspValue=${rs[i].Masp}">
+                            <img src="${rs[i].HinhAnh}" alt="">
+                        </a>
+                        <a href="/chi-tiet-sp?maspValue=${rs[i].Masp}">
+                            <p>${rs[i].Tensp}</p>
+                        </a>
+                        <h4>${rs[i].Gia}đ</h4>
+                        <div class="show_hidden">
+                            <div class="add-cart" data-key="${rs[i].Masp}">
+                                <i class='bx bxs-cart'>
+                                    <p class="add_cart hover_flex">
+                                        Thêm vào giỏ hàng
+                                    </p>
+                                </i>
+                            </div>
+                            <div class="add-like" data-key="${rs[i].Masp}">
+                                <i class='bx bxs-add-to-queue'>
+                                    <p class="add_like hover_flex">
+                                        Thêm vào mục ưu thích
+                                    </p>
+                                </i>
+                            </div>
+                        </div>
+                        <div class="button_show">
+                            <a href="/list-sp?Name=${rs[i].LoaiSp}">
+                                Xem thêm sản phẩm tương tự
+                            </a>
+                        </div>
+                    </div>
+                `
+                        showHtmls += tkHtml;
+                        if (i == 3) {
+                            carouselElement[0].innerHTML = showHtmls;
+                            showHtmls = '';
+                        }
+                        if (i == 7) {
+                            carouselElement[1].innerHTML = showHtmls;
+                            showHtmls = '';
+                        }
+                        if (i == 11) {
+                            carouselElement[2].innerHTML = showHtmls;
+                            showHtmls = '';
+                        }
+                    }
+                    var cartElement = document.querySelectorAll('.add-cart');
+                    addCart(cartElement);
+                    var likeElement = document.querySelectorAll('.add-like');
+                    addLike(likeElement);
+                }
+            });
+        }
+        loadTk();
+    </script>
+    <!-- <script src="./js/body_home.js"></script> -->
+</body>
+
+</html>

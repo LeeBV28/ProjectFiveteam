@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%-include("head")%>
+    <title>Giỏ Hàng</title>
+    <%-include("ngoc_head")%>
+    <link rel="stylesheet" href="./css/giohang.css">
+    <!-- icon -->
+    <script src="https://kit.fontawesome.com/7fbca7d9d5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <%-include("ngoc_header")%>
+        <!--    modal form account login-->
+        <%-include("modal_form_login")%>
+    </header>
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="title-dau-trang">
+                    <p>
+                        <a href="/">
+                            <i class="fas fa-backward"></i>
+                            Mua thêm sản phẩm
+                        </a>
+                    </p>
+                    <p>Hoá đơn của bạn</p>
+                </div>
+                <div class="section">
+                    <div class="hoa-don">
+                        <h1>Hoá Đơn</h1>
+                        <p>
+                            Tên Khách Hàng: 
+                            <span><%= hoadon[0].TenKH %></span>
+                        </p>
+                        <p>
+                            Số Điện Thoại: 
+                            <span><%= hoadon[0].SoDt %></span>
+                        </p>
+                        <p>
+                            Địa Chỉ: 
+                            <span><%= hoadon[0].DiaChi %></span>
+                        </p>
+                        <table class="table table-bordered">
+                            <thead>
+                              <tr>
+                                <th scope="col">STT</th>
+                                <th scope="col">Tên Sản Phẩm</th>
+                                <th scope="col">Số Lượng</th>
+                                <th scope="col">Giá</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                                <% for(var i = 0; i < hoadon.length; i++) { %>
+                                    <tr>
+                                        <td><%=i+1 %></td>
+                                        <td><%=hoadon[i].Tensp %></td>
+                                        <td><%=hoadon[i].SoLuong %></td>
+                                        <td><%=hoadon[i].Gia %>đ</td>
+                                      </tr>
+                                <%} %>
+
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+                <p class="chantrang">Cảm ơn quý khách</p>  
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <%-include("ngoc_footer")%>
+    </footer>
+
+    <!-- <script src="./js/giohang.js"></script> -->
+</body>
+</html>

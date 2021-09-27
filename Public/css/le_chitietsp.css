@@ -1,0 +1,344 @@
+:root {
+    --color-blues: #4285de;
+    --color-brown: #d45e35;
+    --color-gray: #f1f1f1;
+    --color-ori: #fb6e2e;
+    --color-green: #3dab64;
+}
+
+.list-product-detail {
+    display: none;
+}
+.header__list-product:hover .list-product-detail {
+    display: flex;
+}
+.main .container-fluid {
+    padding: 0 3%;
+}
+p {
+    margin-bottom: 0;
+}
+img {
+    width: 100%;
+}
+.title-dautrang {
+    margin-top: 20px;
+}
+
+.title-dautrang h1 {
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.title-dautrang hr {
+    margin-top: 0;
+}
+.image {
+    box-shadow: 0px 0px 5px 0px #ababab;
+    border-radius: 5px;
+}
+.sub-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+.sub-image img {
+    width: 10%;
+    border: 1.5px solid gray;
+    border-radius: 3px;
+    margin: 0 10px;
+}
+.sub-image img.active {
+    border-color: orange;
+}
+
+.col-4 h2 {
+    font-size: 18px;
+}
+
+.mua-ngay {
+    border-radius: 5px;
+    background: #f1f1f1;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.mua-ngay h2 {
+    flex-basis: 100%;
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+    background-color: #d45d35;
+    text-transform: uppercase;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.mua-ngay h2 span {
+    color: yellow;
+}
+h3.gia-dc {
+    color: #d45d35;
+    font-weight: 800;
+}
+.qua-tang {
+    margin: 10px 0;
+    border: 1px solid darkgrey;
+    border-radius: 5px;
+    padding-bottom: 10px;
+}
+.qua-tang h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid darkgrey;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 10px 0;
+}
+.list_qua-tang {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px 0;
+}
+.list_qua-tang p.nb {
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    line-height: 18px;
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+.list_qua-tang p.conten {
+    min-height: 20px;
+    line-height: 20px;
+}
+.mo-ta {
+    margin-top: 60px;
+}
+.mo-ta h1 {
+    font-weight: 600;
+    text-transform: capitalize;
+    border-bottom: 2px solid orange;
+    width: 40%;
+}
+.mo-ta h2 {
+    font-size: 24px;
+}
+.mo-ta p {
+    margin-bottom: 15px;
+}
+.mo-ta img {
+    margin-bottom: 10px;
+}
+.btn_xem-them {
+    margin: 10px 0;
+}
+.thong-so {
+    margin-top: 80px;
+}
+.thong-so h2 {
+    font-size: 25px;
+    font-weight: 600;
+}
+.noi-dung {
+    position: relative;
+}
+.noi-dung.overhiden .overlay {
+    display: block;
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(#ffffff00, #f7f7f7);
+}
+.noi-dung .overlay {
+    display: none;
+}
+.noi-dung.overhiden {
+    height: 300px;
+    overflow: hidden;
+}
+.noidung p:first-child {
+    width: 50%;
+    padding-right: 10px;
+}
+.noidung ul {
+    padding-left: 0;
+}
+.noidung li {
+    padding: 7px 5px;
+    font-size: 14px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.noidung li:nth-child(odd) {
+    background-color: #e9e9e9b8;
+}
+.sp-khac h1 {
+    border-bottom: 1px solid;
+    font-size: 30px;
+}
+.noidung_sp-khac {
+    display: flex;
+    flex-wrap: nowrap;
+}
+/* CSS show sp */
+.showSp {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.showSp h1 {
+    width: 100%;
+}
+.show {
+    width: 20%;
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.show img {
+    width: 100%;
+}
+.show a {
+    color: black;
+}
+.show p {
+    font-size: 12px;
+    text-align: center;
+    color: black;
+    margin: 0;
+}
+.show h4 {
+    font-size: 20px;
+    color: var(--color-blues);
+    margin: 0;
+    text-align: center;
+}
+.show .show_hidden {
+    display: none;
+    padding: 0 75px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.show_hidden i {
+    font-size: 30px;
+    color: var(--color-ori);
+    position: relative;
+}
+.show_hidden i .hover_flex {
+    width: 118px;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    color: white;
+    background-color: black;
+    border-radius: 3px;
+    padding: 6px 0;
+}
+.show:hover .show_hidden {
+    display: flex;
+}
+.show_hidden .bxs-cart:hover .add_cart {
+    display: block;
+}
+.show_hidden .bxs-add-to-queue:hover .add_like {
+    display: block;
+}
+/* done css show */
+
+.binhluan {
+    margin: 50px 0 20px 0;
+}
+.binhluan .row {
+    margin: 20px -12px;
+}
+.load-binhluan h1 {
+    font-size: 20px;
+}
+.cmt {
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+.cmt .col-1 {
+    width: 4%;
+}
+.cmt .col-1 i {
+    font-size: 20px;
+    margin-top: 5px;
+    color: white;
+    background-color: #008eff;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+}
+.cmt .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.cmt .col h2 {
+    margin-bottom: 0;
+    font-size: 18px;
+}
+.cmt .col p.rep-cmt {
+    color: blue;
+    font-weight: 500;
+    cursor: pointer;
+}
+.sub-cmt {
+    position: relative;
+    background-color: #f1f1f1;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+    margin-top: 6px;
+}
+.sub-cmt .form-input {
+    flex-basis: 100%;
+}
+.sub-cmt .form-input .col-1 {
+    width: auto;
+}
+.sub-cmt .form-input.none {
+    display: none;
+}
+.drop-up {
+    width: 12px;
+    height: 12px;
+    background-color: #f1f1f1;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    transform: rotate(45deg);
+    transform: translateY(-50%) rotate(45deg);
+}

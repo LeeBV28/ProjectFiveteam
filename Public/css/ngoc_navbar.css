@@ -74,13 +74,22 @@
 .aside__sale-item-img {
     height: 60px;
     width: auto;
+    border: 1px solid;
+    border-radius: 3px;
+    box-shadow: 0 0 1px 0;
 }
 
 .aside__sale-item-content {
     padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-items: flex-start;
 }
 .aside__sale-item-description {
-    text-align: right;
+    text-align: left;
+    font-size: 12px;
 }
 .aside__sale-item-count {
     color: red;
