@@ -270,6 +270,7 @@ app.get('/order', function(req, res) {
         }
     });
 });
+<<<<<<< HEAD
 // done xử lý giỏ hàng với database
 
 // Xử lý sản phẩm quan tâm
@@ -295,6 +296,10 @@ app.get('/add-like', function(req, res) {
             res.send('Bạn vừa quan tâm thêm 1 sản phẩm. ');
         }
     });
+=======
+app.get('/chitietsp',function(req,res){
+    res.render('chitiet_ngoc');
+>>>>>>> d694c7c7c1d33201fc4bcc01cc1fb5a3e0519aa2
 });
 app.get('/delete-sp-quantam', function(req,res) {
     var masp = req.query.Masp;

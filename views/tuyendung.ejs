@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <%-include("head_tuyendung")%>
-    <title>Tuyển Dụng</title>
-
-
+    <%- include('head') %>
+    <title>Chi Tiết</title>
+    <!-- css -->
+    <link rel="stylesheet" href="/css/tuyendung.css">
+    <!-- boxicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- themify icon -->
+    <link rel="stylesheet" href="./fonts/themify-icons/themify-icons.css">
+    <!-- css header -->
+    <link rel="stylesheet" href="./css/ngoc_header.css">
+    <link rel="stylesheet" href="./css/sub_header.css">
+    <link rel="stylesheet" href="./css/ngoc_footer.css">
+    <script src="https://kit.fontawesome.com/3d8d28f31f.js" crossorigin="anonymous"></script>
 </head>
-    <body>
-    <header class="header">
-        <%-include("ngoc_header")%>
-    </header>
-    <section>
+<body>
+<header class="header">
+    <%-include("ngoc_header")%>
+</header>
+<section>
     <div class="main-container container">
         <div class="wrap-td clearfix">
-            <h2 class="title-result-find">Tuyển dụng</h2>
+            <h1 class="title-result-find">Tuyển dụng</h1>
             <div class="wrap-list-cv">
 
                 <div class="list-cv">
                     <div class="row">
                         <div class="col-sm-12 ">
                             <h5> <a href="/cv1"  class="title-cv">
-                                QUẢN LÝ NGÀNH HÀNG ĐIỆN LẠNH - GIA DỤNG, ĐIỆN TỬ - ITM
+                                    QUẢN LÝ NGÀNH HÀNG ĐIỆN LẠNH - GIA DỤNG, ĐIỆN TỬ - ITM
                                 </a></h5>
                             <h6 class="add-cv">
                                 Quản Lý Ngành Hàng
@@ -64,7 +73,7 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <h5> <a href="/cv2" class="title-cv">
-                                GIÁM ĐỐC CHI NHÁNH SÀI ĐỒNG - LONG BIÊN
+                                    GIÁM ĐỐC CHI NHÁNH SÀI ĐỒNG - LONG BIÊN
                                 </a></h5>
                             <h6 class="add-cv">
                                 Giám Đốc chi nhánh
@@ -108,7 +117,7 @@
                     <div class="row">
                         <div class="col-sm-12 ">
                             <h5> <a href="/cv3"  class="title-cv">
-                                SALES ADMIN
+                                    SALES ADMIN
                                 </a></h5>
                             <h6 class="add-cv">
                                 ADMIN
@@ -152,7 +161,7 @@
                     <div class="row">
                         <div class="col-sm-12 ">
                             <h5><a href="/cv4" class="title-cv">
-                                TUYỂN DỤNG KỸ THUẬT LẮP ĐẶT TẠI HÀ NỘI
+                                    TUYỂN DỤNG KỸ THUẬT LẮP ĐẶT TẠI HÀ NỘI
                                 </a></h5>
                             <h6 class="add-cv">
                                 KỸ THUẬT LẮP ĐẶT
@@ -196,7 +205,7 @@
                     <div class="row">
                         <div class="col-sm-12 col-md-6">
                             <h5><a href="/cv5" class="title-cv">
-                                TUYỂN DỤNG KỸ THUẬT GIAO LẮP TẠI HÀ NỘI
+                                    TUYỂN DỤNG KỸ THUẬT GIAO LẮP TẠI HÀ NỘI
                                 </a></h5>
                             <h6 class="add-cv">
                                 Kỹ Thuật Lắp Đặt
@@ -245,10 +254,10 @@
             </div>
         </div>
     </div>
-    </section>
-    <footer class="footer">
-        <%-include("ngoc_footer")-%>
-    </footer>
-    <%-include("modal_form_login")%>
-    </body>
+</section>
+<footer class="footer">
+    <%-include("ngoc_footer")-%>
+</footer>
+<%-include("modal_form_login")%>
+</body>
 </html>

@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <%-include("head_tuyendung")%>
-    <title>Thông Tin Tuyển Dụng</title>
+    <%- include('head') %>
+    <title>Chi Tiết</title>
+    <!-- css -->
+    <link rel="stylesheet" href="/css/chitiettd.css">
+    <!-- boxicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- themify icon -->
+    <link rel="stylesheet" href="./fonts/themify-icons/themify-icons.css">
+    <!-- css header -->
+    <link rel="stylesheet" href="./css/ngoc_header.css">
+    <link rel="stylesheet" href="./css/sub_header.css">
+    <link rel="stylesheet" href="./css/ngoc_footer.css">
+    <script src="https://kit.fontawesome.com/3d8d28f31f.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <header class="header">
     <%-include("ngoc_header")%>
 </header>
 <section>
-<div class="main-container container">
+    <div class="main-container container">
 
         <div class="col-sm-9">
             <div class="wrap-td clearfix">
@@ -139,7 +150,7 @@
             </div>
         </div>
     </div>
-</div>
+    </div>
 </section>
 <footer class="footer">
     <%-include("ngoc_footer")-%>
